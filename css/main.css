@@ -1,0 +1,10 @@
+body {
+/*    padding-top: 370px; /* 60px for navbar, 310 for play bar */
+    padding-top: 60px; /* 60px for navbar, 310 for play bar */
+    background-color: #444344;
+}
+
+footer {
+    color: #FFF;
+}
+

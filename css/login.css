@@ -1,0 +1,470 @@
+
+/* -------------  Ourtunez Login Page -------------- */
+
+/* ------------------------------------------------------------------ Large Style -------------*/
+
+@media only screen and (min-width: 1250px) {
+	
+#wrapper_login {
+	width:1250px;
+	height:977px;
+	margin:0px auto;
+	padding:0px;
+	background:transparent url(../images/bg_dj_v1_1250w.png) center top no-repeat;
+	position:relative;
+}
+
+#mainCol {
+	float:right;
+	width:800px;
+}
+#login_header {
+	width:800px;
+	float:right;
+	min-height:245px;
+	position:relative;
+	background: transparent url(../images/bg_login_header_med1.png) top left no-repeat;
+}
+#login_logo_lo {
+	display:none;
+}
+#login_logo {
+	position:absolute;
+	bottom:0px;
+	left:15px;
+}
+#login_box {
+	background:#000000;
+	min-height:103px;
+	position:relative;
+	padding:10px 20px;
+}
+#login_register_2 {
+	display:none;
+}
+#login_register {
+	width:123px;
+	height:123px;
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+
+#login_title_2 {
+	display:none;
+}
+#login_title {
+	
+}
+#login_form {
+	padding:10px 0px;
+}
+#login_form input {
+	width:250px;
+}
+#login_form input[type=submit] {
+	width:80px;
+}
+
+#login_nowplaying_lo {
+	dispay:none;
+}
+#login_nowplaying {
+	height:267px;
+	background:#fff;
+	padding-bottom:10px;
+	background:transparent url(../images/login_now_playing_med1.png) top center no-repeat;
+}
+#actionButtons {
+	width:135px;
+	position:absolute;
+	left:px;
+	top:245px;
+	border:1px solid #000;
+	border-left:0px;
+}
+.action a {
+	background:#272627;
+	display:block;
+	padding:15px 10px;
+	font-size:90%;
+	border-bottom:1px solid #000;
+}
+/*
+#login_artists {
+	clear:right;
+	min-height:133px;
+	width:800px;
+	float:right;
+	background:#fff;
+	padding-bottom:10px;
+}
+*/
+#login_artists {
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	min-height:133px;
+	width:800px;
+	background:#fff;
+}
+.iconBox {
+	width:133px;
+	height:133px;
+	float:left;
+	padding:0px;
+	margin:0px;
+	position:relative;
+}
+.iconName {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:100px;
+	padding:3px;
+	background:#2b2b2b;
+	font-size:65%;
+	
+}
+#socialMedia {
+	position:absolute;
+	bottom:20px;
+	left:15px;
+}
+.socialIcons {
+	width:30px;
+	height:30px;
+	float:left;
+	padding:0px 5px;
+}	
+
+#footerMed {
+	clear:right;
+	width:300px;
+	background:none;
+	height:70px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+	
+}
+
+/* ------------------------------------------------------------------- Medium Style ----- */
+
+@media only screen and (min-width: 321px) and (max-width: 1249px) {
+	
+#wrapper_login {
+	width:800px;
+	margin:0px auto;
+	padding:0px;
+	background:transparent url(../images/bg_dj_v1_1250w.png) center top no-repeat;
+	position:relative;
+}
+
+#mainCol {
+	width:800px;
+}
+
+
+#login_header {
+	width:800px;
+	min-height:150px;
+	margin:0px auto;
+	position:relative;
+	background: transparent url(../images/bg_login_header_med1.png) top right no-repeat;
+}
+#login_logo_lo {
+	display:none;
+}
+#login_logo {
+	position:absolute;
+	bottom:0px;
+	left:15px;
+}
+#login_box {
+	background:#000000;
+	min-height:103px;
+	position:relative;
+	padding:10px 20px;
+}
+#login_register_2 {
+	display:none;
+}
+#login_register {
+	width:123px;
+	height:123px;
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+
+#login_title_2 {
+	display:none;
+}
+#login_title {
+	
+}
+
+#login_form {
+	padding:10px 0px;
+	display:block;
+}
+#login_form input {
+	width:250px;
+}
+#login_form input[type=submit] {
+	width:80px;
+}
+
+#login_nowplaying_lo {
+	dispay:none;
+}
+#login_nowplaying {
+	height:267px;
+	background:#fff;
+	padding-bottom:10px;
+	background:transparent url(../images/login_now_playing_med1.png) top center no-repeat;
+}
+
+#login_artists {
+	min-height:133px;
+	background:#fff;
+	padding-bottom:40px;
+}
+.iconBox {
+	width:133px;
+	height:133px;
+	float:left;
+	padding:0px;
+	margin:0px;
+	position:relative;
+}
+.iconName {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:100px;
+	padding:3px;
+	background:#2b2b2b;
+	font-size:65%;
+	
+}
+#footerMed {
+	clear:all;
+	background:#999999;
+	position:relative;
+	border-top:1px solid #000;
+	height:70px;
+	z-index: 10;
+}
+#socialMedia {
+	position:absolute;
+	bottom:20px;
+	left:15px;
+}
+.socialIcons {
+	width:30px;
+	height:30px;
+	float:left;
+	padding:0px 5px;
+}	
+	
+
+#actionButtons {
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	width:350px;
+	height:50px;
+	z-index: 20;
+}
+.action {
+	width:120px;
+	padding:15px;
+	background:#272627;
+	text-align:center;
+	display:inline;
+	border:1px solid #000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin:0px 5px;
+}
+.action a {
+	background:#272627;
+	width:100px;
+	display:inline-block;
+	padding:15px 10px;
+	font-size:90%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#panel {
+	padding:50px;
+	display:none;
+}
+
+	
+}
+
+/* ------------------------------------------------------------------ Mobile Style ------- */
+
+@media only screen and (max-width: 320px) {
+	
+#wrapper_login {
+	width:320px;
+	margin:0px auto;
+	padding:0px;
+	background:#fff;
+	position:relative;
+}
+
+#mainCol {
+	width:320px;
+	margin:0px;
+	padding:0px;
+}
+
+
+#login_header {
+	width:320px;
+	height:33px;
+	margin:0px auto;
+	position:relative;
+	background: transparent url(../images/bg_login_header_med1.png) top right no-repeat;
+}
+#login_logo {
+	display:none;
+}
+#login_logo_lo {
+	
+}
+#login_box {
+	background:#000000;
+	height:50px;
+	position:relative;
+	padding:0px;
+	z-index: 50;
+}
+#login_register {
+	display:none;
+}
+#login_register_2 {
+	width:160px;
+	height:50px;
+	position:absolute;
+	top:0px;
+	right:0px;
+	overflow: hidden;
+}
+#login_title {
+	display:none;
+}
+#login_title_2 {
+	font-size:20px;
+	line-height:50px;
+	width:160px;
+	text-align:center;
+}
+#login_form {
+	padding:10px;
+	background:rgba(0, 0, 0, 0.7);
+	display:none;
+}
+#login_form input {
+	width:250px;
+}
+#login_form input[type=submit] {
+	width:80px;
+}
+
+#login_nowplaying {
+	dispay:none;
+}
+#login_nowplaying_lo {
+	width:320px;
+	height:267px;
+	background:#fff;
+	padding-bottom:10px;
+	background:transparent url(../images/login_now_playing_lo1.png) top center no-repeat;
+}
+
+#login_artists {
+	height:106px;
+	background:#fff;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+.iconBox {
+	width:106px;
+	height:106px;
+	float:left;
+	padding:0px;
+	margin:0px;
+	position:relative;
+}
+.iconName {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:90px;
+	padding:3px;
+	background:#2b2b2b;
+	font-size:65%;
+	
+}
+#footerMed {
+	clear:all;
+	background:#fff;
+	position:relative;
+	border-top:1px solid #000;
+	height:70px;
+	z-index: 10;
+}
+#socialMedia {
+	width:210px;
+	margin:20px auto;
+}
+.socialIcons {
+	width:30px;
+	height:30px;
+	float:left;
+	padding:0px 20px;
+}	
+	
+
+#actionButtons {
+	clear:all;
+	height:60px;
+	background:#272627;
+}
+.action {
+	width:155px;
+	height:58px;
+	padding:0px;
+	background:#272627;
+	text-align:center;
+	display:inline-block;
+	margin:0px;
+}
+.action a {
+	background:#272627;
+	width:158px;
+	height:58px;
+	display:inline-block;
+	padding:20px 0px;
+	font-size:90%;
+	border:1px solid #000;
+	margin:0px;
+}
+
+#panel {
+	padding:50px;
+	display:none;
+}
+	
+	
+}
