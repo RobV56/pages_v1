@@ -1,0 +1,263 @@
+/* 180 250 250 600 */
+
+@media (min-width: 1280px) {
+div.playbar-container {
+    width: 1280px;
+    margin: auto;
+}
+}
+
+@media (max-width: 979px) {
+div.playbar-container {
+    width: 979px;
+    margin: auto;
+}
+}
+
+@media (min-width: 980px) and (max-width: 1289px) {
+div.playbar-container {
+    width: 980px;
+    margin: auto;
+}
+}
+
+div.playbar-border {
+    height: 20px;
+    width: 100%;
+    background-color: #444344;
+/*    border: 1px black solid; */
+}
+
+div.playbar-content {
+    height: 250px;
+    background-color: #4bd4f6;
+
+    font-family: 'Tauri', sans-serif;
+    font-size: 1.0em;
+    font-weight: 900;
+    line-height: 1em;
+}
+
+div.playbar-now-playing {
+/*    border: 1px red solid;*/
+    height: 250px;
+}
+
+div.playbar-now-playing .playing-title {
+/*    border: 1px black solid;*/
+    height: 100%;
+    margin: 0px;
+
+    padding-left: 20px;
+
+    font-family: 'Tauri', sans-serif;
+    font-size: 1.0em;
+    font-weight: 900;
+    line-height: 1em;
+}
+
+div.playbar-now-playing .playing-title {
+/*    border: 1px orange solid; */
+    padding-top: 100px;
+    width: 180px;
+    height: 150px;
+    color: #FFF;
+}
+div.playbar-now-playing .playing-title p.station-name {
+    color: #d9f8f7;
+}
+
+div.playbar-artwork {
+/*    border: 1px black solid; */
+    height: 100%;
+    background-color: #d9f8f7;
+}
+
+div.playbar-artwork-previous {
+/*    border: 1px black solid; */
+    position: relative;
+    float: right;
+    height: 250px;
+    width: 250px;
+    top: -250px;
+    right: 250px;
+    background: url("/static/images/playbar/previous-selection-photo.png") 0 0 no-repeat;
+}
+
+div.playbar-previous-overlay {
+    opacity: .9;
+    background-color: #2e7a8d;
+    height: 100%;
+    width: 100%;
+}
+
+div.playbar-previous-text {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: -250px;
+}
+
+div.playbar-previous-text p.heading {
+    color: #000;
+}
+
+div.playbar-previous-text p.artist-name {
+    color: #FFF;
+}
+
+div.gallery-icon {
+    position: relative;
+    top: -405px;
+    float: right;
+}
+
+div.playbar-artwork-current {
+/*    border: 1px green solid;*/
+    position: relative;
+    float: right;
+    height: 250px;
+    width: 250px;
+    top: -250px;
+    right: -250px;
+    background: url("/static/images/playbar/current-selection.png") 0 0 no-repeat;
+/*    background-color: #FFF;*/
+}
+
+div.playbar-controls {
+    color: #FFF;
+    padding: 25px;
+    padding-left: 0;
+    vertical-align: bottom;
+}
+
+div.playbar-controls a.play,
+div.playbar-controls a.pause {
+	width:40px;
+	height:40px;
+}
+
+div.playbar-controls ul.controls {
+	list-style-type:none;
+	margin:0;
+	padding: 0;
+	overflow:hidden;
+
+	width: 300px;
+	padding:20px 20px 0 20px;
+}
+
+div.playbar-controls ul.controls li {
+	display:inline;
+	float: left;
+}
+
+div.playbar-controls ul.controls a {
+	display:block;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+
+div.playbar-controls a.play {
+	background: url("jplayer.skins/blue.monday/jplayer.blue.monday.jpg") 0 0 no-repeat;
+/*	background: url("/static/images/playbar/play.png") 0 0 no-repeat; */
+}
+div.playbar-controls a.play:hover {
+	background: url("/static/images/playbar/play_hover.png") 0 0 no-repeat;
+}
+div.playbar-controls a.pause {
+	background: url("/static/images/playbar/pause.png") 0 0 no-repeat;
+	display: none;
+}
+div.playbar-controls a.pause:hover {
+	background: url("/static/images/playbar/pause_hover.png") 0 0 no-repeat;
+	display: none;
+}
+
+div.playbar-controls .artist-name {
+    min-height: 20px;
+}
+
+div.playbar-controls .album-name {
+    min-height: 20px;
+}
+
+div.control-box {
+    background-color: #000;
+    height: 80px;
+    width: 100%;
+}
+
+
+a.jp-like,
+a.jp-dislike,
+a.jp-favorite,
+a.jp-like-on,
+a.jp-dislike-on,
+a.jp-favorite-on {
+    width:40px;
+    height:40px;
+}
+
+a.jp-like {
+	background: url("images/playbar/like.png") no-repeat;
+}
+
+a.jp-like-on {
+	background: url("images/playbar/like_hover.png") no-repeat;
+}
+
+a.jp-dislike {
+	background: url("images/playbar/dislike.png") no-repeat;
+}
+
+a.jp-dislike-on {
+	background: url("images/playbar/dislike_hover.png") no-repeat;
+}
+
+a.jp-favorite {
+	background: url("images/playbar/favorite.png") no-repeat;
+}
+
+a.jp-favorite-on {
+	background: url("images/playbar/favorite_hover.png") no-repeat;
+}
+
+div.jp-interface ul.jp-buttons {
+	list-style-type:none;
+	margin:0;
+	padding: 0;
+	overflow:hidden;
+	position: absolute;
+	margin-top: 8px;
+	margin-left: 420px;
+}
+
+div.jp-interface ul.jp-buttons li {
+	display:inline;
+	float: left;
+}
+
+div.jp-interface ul.jp-buttons a {
+	display:block;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+
+div.jp-audio ul.jp-buttons {
+	width: 380px;
+	padding:20px 20px 0 20px;
+	top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

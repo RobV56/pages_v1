@@ -152,7 +152,7 @@
 
 /* ------------------------------------------------------------------- Medium Style ----- */
 
-@media only screen and (min-width: 321px) and (max-width: 1249px) {
+@media only screen and (min-width: 800px) and (max-width: 1249px) {
 	
 #wrapper_login {
 	width:800px;
@@ -312,7 +312,7 @@
 
 /* ------------------------------------------------------------------ Mobile Style ------- */
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 799px) {
 	
 #wrapper_login {
 	width:320px;
