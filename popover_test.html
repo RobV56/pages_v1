@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+	Remove this if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>popover_test</title>
+	<meta name="description" content="" />
+	<meta name="author" content="RVanDo01" />
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+	<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.css">
+</head>
+
+<body>
+	<div>
+		<header>
+			<h1>popover_test</h1>
+		</header>
+		<div>
+			<a href="#" id="artist123" class="btn btn-primary" rel="popover" data-content="Bunch of content stuff here." data-original-title="LOOK AT ME!">Features Artist Image Here</a>
+		</div>
+
+		<footer>
+			<p>
+				&copy; Copyright  by RVanDo01
+			</p>
+		</footer>
+	</div>
+		
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <script defer src="js/vendor/jquery-1.9.1.js"></script>
+  <script defer src="js/vendor/bootstrap.js"></script>
+  
+  <script>
+  	$(function() {
+  		
+  		$('#artist123').popover({trigger:'click', placement:'bottom'});
+  		
+  	});
+  	
+  </script>
+  <!-- end scripts-->		
+		
+</body>
+</html>

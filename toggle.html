@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>jQuery UI Effects - Toggle Demo</title>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+
+<style>
+.toggler {
+width: 500px;
+height: 200px;
+}
+#button {
+padding: .5em 1em;
+text-decoration: none;
+}
+#effect {
+position: relative;
+width: 240px;
+height: 135px;
+padding: 0.4em;
+}
+#effect h3 {
+margin: 0;
+padding: 0.4em;
+text-align: center;
+}
+</style>
+<script>
+$(function() {
+// run the currently selected effect
+function runEffect() {
+
+// run the effect
+$( "#effect" ).toggle( 'slide', 1500 );
+};
+// set effect from select menu value
+$( "#button" ).click(function() {
+runEffect();
+return false;
+});
+});
+</script>
+</head>
+<body>
+<div class="toggler">
+<div id="effect" class="">
+<h3 class="">Toggle</h3>
+<p>
+Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+</p>
+</div>
+</div>
+
+<a href="#" id="button" class="">Run Effect</a>
+</body>
+</html>

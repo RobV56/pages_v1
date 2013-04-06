@@ -1,0 +1,26 @@
+/* ----------------------------------------------------
+   created with http://www.texturepacker.com 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:42b2bd76e32c7c866877be159a1e64ec$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(sprite_30x30.png);}
+
+.add {width:30px; height:30px; background-position: -0px -90px}
+.add:hover {width:30px; height:30px; background-position: -30px -90px}
+.add:active {width:30px; height:30px; background-position: -30px -90px}
+.dislike {width:30px; height:30px; background-position: -0px -60px}
+.dislike:hover {width:30px; height:30px; background-position: -30px -60px}
+.dislike:active {width:30px; height:30px; background-position: -60px -60px}
+.favorite {width:30px; height:30px; background-position: -0px -30px}
+.favorite:hover {width:30px; height:30px; background-position: -30px -30px}
+.favorite:active {width:30px; height:30px; background-position: -60px -30px}
+.like {width:30px; height:30px; background-position: -0px -0px}
+.like:hover {width:30px; height:30px; background-position: -30px -0px}
+.like:active {width:30px; height:30px; background-position: -60px -0px}
