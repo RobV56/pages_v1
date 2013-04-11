@@ -7,6 +7,27 @@
 .textBlack {
 	color:#000;
 }
+.clearLeftFloat  {
+	clear:left;
+	padding-top:15px;
+}
+
+.table th .centerText , .table td .centerText {
+	text-align:center;
+}
+
+#searchModalMobile .table th, #searchModalMobile .table td {
+    line-height: 14px;
+    text-align: left;
+}
+
+#searchBar form {
+	margin:0px;
+}
+#searchBarMobile form {
+	margin:0px;
+	text-align:center;
+}
 #playButton a {
 	width:27px;
 	height:27px;
@@ -136,11 +157,53 @@
 
 .modal {
 	margin-left:-150px;
+	color:#000;
+	font-size:80%;
 }
 #myModal {
 	color:#000;
 	width:300px;
 }
+#searchModal {
+	color:#000;
+	width:700px;
+	height:600px;	
+	margin-left:-350px;
+	color:#000;
+	line-height:14px;
+	font-size:10px;
+}
+#searchModal li a {
+	padding:3px 5px;
+}
+#searchModal a {
+	color:#000;
+}
+#searchModal a:hover {
+	color:#44BEEA;
+}
+#songRes {
+	border:1px;
+	border-color: #DDDDDD transparent #DDDDDD #DDDDDD;
+}
+
+#searchModalMobile {
+	color:#000;
+	width:300px;
+	height:400px;	
+	margin-left:-150px;
+	color:#000;
+	font-size:9px;
+	line-height:10px;
+}
+#resArtistSong {
+	width:258px;
+}
+input[type="search"], select, .btn-small  {
+	border-radius: 0px;
+	font-size:12px;
+}
+
 .buttonX {
 	display: block; 
 	width: 30px; 
@@ -170,7 +233,20 @@
 .play {width:27px; height:27px; background-position: -27px -0px}
 .play:hover {width:27px; height:27px; background-position: -0px -0px}
 
+.sprite_lower_tabs {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(../images/sprite/tab_lower.png);}
 
+.add {width:30px; height:30px; background-position: -30px -0px}
+.add:hover {width:30px; height:30px; background-position: -0px -0px}
+.add:active {width:30px; height:30px; background-position: -0px -0px}
+.favorite {width:30px; height:30px; background-position: -30px -30px}
+.favorite:hover {width:30px; height:30px; background-position: -0px -30px}
+.favorite:active {width:30px; height:30px; background-position: -0px -30px}
+.play2 {width:30px; height:30px; background-position: -30px -60px}
+.play2:hover {width:30px; height:30px; background-position: -0px -60px}
+.play2:active {width:30px; height:30px; background-position: -0px -60px}
+.remove {width:30px; height:30px; background-position: -30px -90px}
+.remove:hover {width:30px; height:30px; background-position: -0px -90px}
+.remove:active {width:30px; height:30px; background-position: -0px -90px}
 
 /* ------------------------------------------------------------------ Large Style -------------*/
 
@@ -188,6 +264,82 @@
 	float:right;
 	width:800px;
 }
+#rightColTabs {
+	width:220px;
+	float:right;
+	background: #44BDE9;
+	min-height: 300px;
+}
+#leftColTabs {
+	width:190px;
+	float:left;
+}
+
+#profileNav {
+	width:140px; 
+	float:left;
+	margin-right:-1px;
+}
+#tabInner {
+	margin:0px 220px 0px 190px;
+	color:#000000;
+	padding:15px;
+}
+.tab-content a {
+	color:#000;
+	font-size:9px;
+	line-height:12px;
+}
+.nav-tabs > li > a {
+	border-radius:0px;
+	padding:0px 10px;
+}
+
+/* profile tab */
+
+#profileImage {
+	width:150px;
+	height:100px;
+	float:left;
+}
+#profileInterests, #profileName {
+	font-weight:bold;
+	text-transform: capitalize;
+	padding:0px 25px 5px 25px;
+	margin-left:150px;
+	font-size:11px;
+}
+.profileLocation {
+	color:#777;
+	font-weight:bold;
+	text-transform: capitalize;
+	padding:0px 25px 5px 25px;
+}
+#profileInterestsTags {
+	padding:0px 25px 5px 25px;
+	color:#777;
+	font-size:11px;
+	margin-left:150px;
+}
+
+#profileTab, #newsTab, #stationsTab, #playlistTab {
+	padding:0px 10px;
+	border:1px solid #DDDDDD;
+	font-size:10px;
+}
+.newsDateCell {
+	width:80px;
+}
+.newsImageCell {
+	width:30px;
+}
+.newsNameCell {
+	width:120px;
+}
+
+
+
+
 #header {
 	height:49px;
 	padding:0px 0px 10px 0px;
@@ -233,6 +385,14 @@
 }
 #searchBox form select {
 	width:100px;
+}
+
+#searchBar {
+	text-align:right;
+	padding:10px;
+}
+#searchBarMobile {
+	display:none;
 }
 #playZone {
 	XXbackground:#444344;
@@ -320,6 +480,7 @@
 	width:225px;
 	padding:10px;
 	background:#1D1C1D;
+	overflow:auto;
 }
 #nowPlayingTextArea {	
 	XXXXXbackground:transparent url(../images/previous_arrow_v1.png) right center no-repeat;
@@ -515,18 +676,25 @@
 	font-size:80%;
 	line-height:14px;
 }
+
+#tabContentMobile {
+	display:none;
+}
 #tabContent {
 	color:#000;
 	min-height:50px;
 }
 #tabContent .row-fluid {
-	display: none;
+	
 }
 
 .mainTabs li a {
-	background: #808080;
+	background: #999999;
 	padding:20px 10px;
 	margin: 2px 0px;
+	color:#000;
+	font-size:90%;
+	font-weight:bold;
 }
 .favMenu {
 	list-style: none;
@@ -578,6 +746,92 @@ body {
 	top:15px;
 	left:15px;
 }
+
+#rightColTabs {
+	display:none;
+}
+
+#leftColTabs {
+	width:120px;
+	float:left;
+	background:#666;
+}
+
+#profileNav {
+	width:120px; 
+	float:left;
+	margin-right:-1px;
+}
+#profileNav .tabs-left > .nav-tabs {
+	margin-right:0px;
+}
+#profileNav .tab-content {
+	XXXmargin-left:0px;
+}
+#newsTab, #profileTab {
+	padding-left:0px;
+	margin-left:0px;
+}
+#tabInner {
+	margin:0px 0px 0px 120px;
+	color:#000000;
+	padding:15px;
+}
+.tab-content a {
+	color:#000;
+	font-size:9px;
+	line-height:12px;
+}
+.nav-tabs > li > a {
+	border-radius:0px;
+	padding:0px 10px;
+}
+
+/* profile tab */
+
+#profileImage {
+	width:150px;
+	height:100px;
+	float:left;
+}
+#profileInterests, #profileName {
+	font-weight:bold;
+	text-transform: capitalize;
+	padding:0px 25px 5px 25px;
+	margin-left:150px;
+	font-size:11px;
+}
+.profileLocation {
+	color:#777;
+	font-weight:bold;
+	text-transform: capitalize;
+	padding:0px 25px 5px 25px;
+}
+#profileInterestsTags {
+	padding:0px 25px 5px 25px;
+	color:#777;
+	font-size:11px;
+	margin-left:150px;
+}
+/*#profileTab, #newsTab {
+	padding:0px 10px 10px 0px;
+	border:1px solid #DDDDDD;
+}*/
+#profileTab, #newsTab, #stationsTab, #playlistTab {
+	padding:0px 10px;
+	border:1px solid #DDDDDD;
+	font-size:10px;
+}
+.newsDateCell {
+	width:80px;
+}
+.newsImageCell {
+	width:30px;
+}
+.newsNameCell {
+	width:120px;
+}
+
 #iconBar {
 	height: 36px;
 	width:200px;
@@ -613,6 +867,16 @@ body {
 #searchBox form select {
 	width:100px;
 }
+
+
+#searchBar {
+	text-align:right;
+	padding:10px;
+}
+#searchBarMobile {
+	display:none;
+}
+
 #playZone {
 	background:#444344;
 	padding:0px 0px 10px 0px;
@@ -905,6 +1169,28 @@ body {
 	font-size:80%;
 	line-height:14px;
 }
+
+#tabContentMobile {
+	display:none;
+}
+
+#tabContent {
+	color:#000;
+	min-height:50px;
+}
+#tabContent .row-fluid {
+	
+}
+
+.mainTabs li a {
+	background: #999999;
+	padding:20px 10px;
+	margin: 2px 0px;
+	color:#000;
+	font-size:90%;
+	font-weight:bold;
+}
+
 .favMenu {
 	list-style: none;
 	padding:0px;
@@ -960,6 +1246,17 @@ body {
 	top:15px;
 	left:15px;
 }
+#rightColTabs {
+	display:none;
+}
+
+#leftColTabs {
+	display:none;
+}
+#tabInner {
+	display:none;
+}
+
 #iconBar {
 	height: 36px;
 	width:72px;
@@ -996,6 +1293,20 @@ body {
 #searchBox form select {
 	width:100px;
 }
+
+
+#searchBar {
+	display:none;
+}
+#searchBarMobile {
+	text-align:right;
+	padding:10px;
+}
+#searchBarMobile form {
+	margin:0px;
+	text-align:center;
+}
+
 #playZone {
 	background:#444344;
 	padding:0px 0px 10px 0px;
@@ -1357,10 +1668,53 @@ body {
 .favMenu li a {
 	padding:3px 0px 3px 15px;
 }
+#tabContentMobile {
+	font-size:10px;
+	color:#000;
+}
+#tabContentMobile a {
+	color:#000;
+}
+#tabContentMobile .nav-tabs > li {
+	padding:0px;
+	border-radius:0px;
+	margin:0px;
+}
+#tabContentMobile .nav-tabs > li > a {
+	padding:0px;
+	margin:0px;
+}
+#tabContentMobile .nav {
+	margin:0px;
+}
+#playlistsMenuMobile {
+	z-index: 500;
+}
+.mobileTab {
+	margin:0px;
+	padding:0px;
+}
+.mobileTabContentInner {
+	padding:5px;
+}
+.mobileNewsName {
+	font-weight:bold;
+}
+.mobileNewsIcon {
+	width:30px;
+}
+.mobileNewsContent {
+	
+}
+.mobileNewsDate {
+	
+}
+
+
+
 
 #tabContent {
-	color:#000;
-	min-height:50px;
+	display:none;
 }
 
 #tabContent .row-fluid {
@@ -1441,6 +1795,19 @@ body {
 .like:hover {width:77px; height:50px; background-position: -80px -0px}
 .like:active {width:77px; height:50px; background-position: -160px -0px}
 
-	
+.sprite_mobile_tabs {display:inline-block;border:0px; padding:0px; margin:0px; overflow:hidden; background-repeat: no-repeat;background-image:url(../images/sprite/sprite_mobile_80x50_v1.png);}
+
+.artist {width:80px; height:50px; background-position: -0px -150px}
+.artist:hover {width:80px; height:50px; background-position: -80px -150px}
+.artist:active {width:80px; height:50px; background-position: -80px -150px}
+.news {width:80px; height:50px; background-position: -0px -100px}
+.news:hover {width:80px; height:50px; background-position: -80px -100px}
+.news:active {width:80px; height:50px; background-position: -80px -100px}
+.playlist {width:80px; height:50px; background-position: -0px -50px}
+.playlist:hover {width:80px; height:50px; background-position: -80px -50px}
+.playlist:active {width:80px; height:50px; background-position: -80px -50px}
+.station {width:80px; height:50px; background-position: -0px -0px}
+.station:hover {width:80px; height:50px; background-position: -80px -0px}
+.station:active {width:80px; height:50px; background-position: -80px -0px}	
 	
 }

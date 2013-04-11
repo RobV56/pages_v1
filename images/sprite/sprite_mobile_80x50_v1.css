@@ -1,0 +1,27 @@
+/* ----------------------------------------------------
+   created with http://www.texturepacker.com 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:1fbe00cd94a7711c3f84fcd9bdd7c787$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(sprite_mobile_80x50_v1.png);}
+
+.artist {width:80px; height:50px; background-position: -0px -150px}
+.artist:hover {width:80px; height:50px; background-position: -80px -150px}
+.artist:active {width:80px; height:50px; background-position: -80px -150px}
+.news {width:80px; height:50px; background-position: -0px -100px}
+.news:hover {width:80px; height:50px; background-position: -80px -100px}
+.news:active {width:80px; height:50px; background-position: -80px -100px}
+.playlist {width:80px; height:50px; background-position: -0px -50px}
+.playlist:hover {width:80px; height:50px; background-position: -80px -50px}
+.playlist:active {width:80px; height:50px; background-position: -80px -50px}
+.station {width:80px; height:50px; background-position: -0px -0px}
+.station:hover {width:80px; height:50px; background-position: -80px -0px}
+.station:active {width:80px; height:50px; background-position: -80px -0px}
+

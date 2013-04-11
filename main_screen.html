@@ -49,10 +49,10 @@
 	
 	<header id="header">
 		<div class="row-fluid">
-			<div class="span4">
+			<div class="span3">
 				<div id="logo"><img src="images/logo_v2.png"></div>
 			</div>
-			<div class="span4">
+			<div class="span3">
 				<div id="iconBar">
 					<div class="icon">
 						<a href=""><img src="images/icon_profile_36_v1.png" /></a>
@@ -60,16 +60,27 @@
 					<div id="userName">Konrad Schmidt</div>
 				</div>
 			</div>
-			<div class="span4">
-				
+			<div class="span6">
+				<div id="searchBar">
+					<form class="form-inline">
+					    <input type="search" class="input-medium" placeholder="search">
+						<select class="input-small">
+							<option>Songs</option>
+							<option>Artists</option>
+						</select>	    
+					    <button type="submit" class="btn btn-info btn-small" data-target="#searchModal" data-toggle="modal">GO</button>
+					</form> 					
+				</div> 
 			</div>
 		</div>
-		
-		
-		
 	</header>
 	
-	
+	<div id="searchBarMobile">
+		<form class="form-inline">
+		    <input type="search" class="" placeholder="search">    
+		    <button type="submit" class="btn btn-info btn-small" data-target="#searchModalMobile" data-toggle="modal">GO</button>
+		</form>
+	</div>	
 	
 	<section id="playZone">
 		
@@ -92,7 +103,7 @@
 			    <div class="row-fluid">
 			    	 <div class="span12  bgGray">
 					    <div class="row-fluid padding5">
-						    <div class="span2 center">
+						    <div class="span2centerText">
 						    	<div class="controls_sprite play"><a href="javascript:;"></a></div>
 						    	<!--<div class="controls_sprite pause"><a href="javascript:;"></a></div> -->
 						    	<div class="controls_sprite next"><a href="javascript:;"></a></div>
@@ -214,9 +225,9 @@
 			    </div>
 		   </div>
 		   <div id="controlsMobile"> 
-		    	<div class="controls_sprite play"><a href="javascript:;"></a></div>
+		    	<div class="controls_sprite play"></div>
 	    		<!--<div class="controls_sprite pause"><a href="javascript:;"></a></div> -->
-	    		<div class="controls_sprite next"><a href="javascript:;"></a></div>
+	    		<div class="controls_sprite next"></div>
 	       </div>
 		</div>	
 		
@@ -243,6 +254,10 @@
 					<ul class="favMenu">
 						<li class="title">CHOOSE PLAYLIST</li>
 						<li><a href="">WORKOUT ROCK</a></li>
+						<li><a href="">HEAD BUSTING JAMS</a></li>
+						<li><a href="">HEAD BUSTING JAMS</a></li>
+						<li><a href="">HEAD BUSTING JAMS</a></li>
+						<li><a href="">HEAD BUSTING JAMS</a></li>
 						<li><a href="">HEAD BUSTING JAMS</a></li>
 					</ul>
 					
@@ -369,27 +384,563 @@
 <!--  TEMP CHARTS   -->	
 
 <section id="tabContent">
-<div class="row-fluid">
-	<div class="span2">
-		
-		<div class="tabbable">
-		  <ul class="nav nav-stacked mainTabs">
-		    <li class="active"><a href="#tab-playlists" data-toggle="tab">PLAYLISTS</a></li>
-		    <li class=""><a href="#tab-friends" data-toggle="tab">FRIENDS</a></li>
-		    <li class=""><a href="#tab-artists" data-toggle="tab">ARTISTS</a></li>
-		    <li class=""><a href="#tab-news" data-toggle="tab">NEWS</a></li>
-		    <li class=""><a href="#tab-stations" data-toggle="tab">STATIONS</a></li>
-		    <li class=""><a href="#tab-messages" data-toggle="tab">MESSSAGES</a></li>
-		    <li class=""><a href="#tab-profile" data-toggle="tab">PROFILE</a></li>
-		  </ul> 
+
+<div id="rightColTabs">
+	<img src="http://lorempixel.com/220/220/music" />
+</div> 
+
+<div id="leftColTabs">
+
+	<div class="tabbable">
+	  <ul class="nav nav-stacked mainTabs" id="mainTab">
+	    <li class="active"><a href="#mainProfile" data-toggle="tab">PROFILE</a></li>
+	    <li class=""><a href="#mainStations" data-toggle="tab">STATIONS</a></li>
+	    <li class=""><a href="#mainPlaylists" data-toggle="tab">PLAYLISTS</a></li>
+	    <li class=""><a href="#mainArtists" data-toggle="tab">ARTISTS</a></li>
+	  </ul> 
+	</div>
+
+</div> 
+
+<div id="tabInner" class="row">
+
+	<div class="">
+		<div class="tab-content">
+			
+<!-- PROFILE - MAIN TAB  -->			
+			<div class="tab-pane active" id="mainProfile">
+				<!-- PROFILE TAB  -->
+				<div id="profileImage"><img src="http://lorempixel.com/150/100/people" /></div>
+				<div id="profileName">User Name <span class="profileLocation">City, State</span></div>
+				<div id="profileInterests">Music Interests:</div>				
+				<div id="profileInterestsTags">Genre Tags</div>
+				<div class="clearLeftFloat">
+					<div class="tabbable tabs-left clearfix">				
+						<ul class="nav nav-tabs" id="profileNav">
+							<li class="active"><a href="#newsTab" data-toggle="tab">NEWS</a></li>
+							<li><a href="#profileTab" data-toggle="tab">PROFILE</a></li>
+						</ul>
+						
+<!-- PROFILE - NEWS FEED TAB  -->					
+						<div class="tab-content">
+							<div class="tab-pane active" id="newsTab">
+								<!-- PROFILE NEWS CONTENT -->
+								<div><h5>NEWS FEED</h5></div>
+								<table class="table table-condensed">
+							    	<tbody>
+							    	<tr>
+							    		<td class="newsImageCell"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td class="newsNameCell">Frank Ocean</td>
+								    	<td>
+								    		<div class="newsMessage">Message Content Goes Here. Message Content Goes Here. Message Content Goes Here.</div>
+								    		<div class="newsImageAttach"></div>
+								    	</td>
+								    	<td class="newsDateCell">
+								    		<div class="newsDate">Apr 13, 2013</div>
+								    	</td>
+							    	</tr>
+							    	<tr>
+							    		<td class="newsImageCell"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td class="newsNameCell">Frank Ocean</td>
+								    	<td class="centerText">
+								    		<div>Message Content Goes Here. Message Content Goes Here. Message Content Goes Here.</div>
+								    		<div><img src="http://lorempixel.com/200/150/nightlife" /></div>
+								    	</td>
+								    	<td class="newsDateCell">Apr 13, 2013</td>
+							    	</tr>
+							    	<tr>
+							    		<td class="newsImageCell"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td class="newsNameCell">Frank Ocean</td>
+								    	<td class="centerText">
+								    		<div>Message Content Goes Here. Message Content Goes Here. Message Content Goes Here.</div>
+								    		<div></div>
+								    	</td>
+								    	<td class="newsDateCell">Apr 13, 2013</td>
+							    	</tr>
+							    	</tbody>
+							    </table>
+							</div>
+							
+<!-- PROFILE - PROFILE UPDATE TAB  -->							
+							<div class="tab-pane" id="profileTab">
+								<!-- PROFILE PROFILE CONTENT -->
+								<div>
+										<div><h5>USER INFO</h5></div>
+									<table class="table table-condensed">
+								    	<tbody>
+								    	<tr>
+								    		<td>User Picture</td>
+									    	<td>
+									    		<input type="file" name="" id="" />												
+									    	</td>
+								    	</tr>
+								    	<tr>
+								    		<td>First Name</td>
+									    	<td>
+									    		<input type="text" name="" id="" />
+									    	</td>
+								    	</tr>
+								    	<tr>
+								    		<td>Last Name</td>
+									    	<td>
+									    		<input type="text" name="" id="" />
+									    	</td>
+								    	</tr>
+								    	<tr>
+								    		<td>Ciy</td>
+									    	<td>
+									    		<input type="text" name="" id="" />
+									    	</td>
+								    	</tr>
+								    	<tr>
+								    		<td>State</td>
+									    	<td>
+												<select name="state">
+													<option value="AL">AL</option>
+													<option value="AK">AK</option>
+													<option value="AZ">AZ</option>
+													<option value="AR">AR</option>
+													<option value="CA">CA</option>
+													<option value="CO">CO</option>
+													<option value="CT">CT</option>
+													<option value="DE">DE</option>
+													<option value="DC">DC</option>
+													<option value="FL">FL</option>
+													<option value="GA">GA</option>
+													<option value="HI">HI</option>
+													<option value="ID">ID</option>
+													<option value="IL">IL</option>
+													<option value="IN">IN</option>
+													<option value="IA">IA</option>
+													<option value="KS">KS</option>
+													<option value="KY">KY</option>
+													<option value="LA">LA</option>
+													<option value="ME">ME</option>
+													<option value="MD">MD</option>
+													<option value="MA">MA</option>
+													<option value="MI">MI</option>
+													<option value="MN">MN</option>
+													<option value="MS">MS</option>
+													<option value="MO">MO</option>
+													<option value="MT">MT</option>
+													<option value="NE">NE</option>
+													<option value="NV">NV</option>
+													<option value="NH">NH</option>
+													<option value="NJ">NJ</option>
+													<option value="NM">NM</option>
+													<option value="NY">NY</option>
+													<option value="NC">NC</option>
+													<option value="ND">ND</option>
+													<option value="OH">OH</option>
+													<option value="OK">OK</option>
+													<option value="OR">OR</option>
+													<option value="PA">PA</option>
+													<option value="RI">RI</option>
+													<option value="SC">SC</option>
+													<option value="SD">SD</option>
+													<option value="TN">TN</option>
+													<option value="TX">TX</option>
+													<option value="UT">UT</option>
+													<option value="VT">VT</option>
+													<option value="VA">VA</option>
+													<option value="WA">WA</option>
+													<option value="WV">WV</option>
+													<option value="WI">WI</option>
+													<option value="WY">WY</option>
+												</select>									    		
+									    	</td>
+								    	</tr>
+								    	<tr>
+								    		<td>Music Interests</td>
+									    	<td>
+									    		<input type="text" name="" id="" />
+									    	</td>
+								    	</tr>
+								    	<tr>
+								    		<td></td>
+									    	<td>
+									    		<button class="btn btn-info">SAVE</button>
+									    	</td>
+								    	</tr>
+								    	</tbody>
+								    </table>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			
+			
+			</div>
+			
+<!-- STATIONS - MAIN TAB  -->			
+			<div class="tab-pane" id="mainStations">
+				<!-- Stations TAB  -->
+				
+				<div class="clearLeftFloat">
+					<div class="tabbable tabs-left clearfix">				
+						<ul class="nav nav-tabs" id="profileNav">
+							<li><h6>STATIONS</h6></li>
+							<li class="active"><a href="#stationsTab" data-toggle="tab">All</a></li>
+							<li><a href="#stationsTab" data-toggle="tab">FAVORITE</a></li>
+						</ul>
+<!-- STATIONS - ALL and FAVORITE TAB  -->					
+						<div class="tab-content">
+							<div class="tab-pane active" id="stationsTab">
+								<!-- STATIONS NEWS CONTENT -->
+								<div><h5>STATIONS</h5></div>
+								<table class="table table-condensed">
+							    	<thead>
+							    		<tr>
+							    			<th></th>
+							    			<th>GENRE</th>
+							    			<th></th>
+							    			<th>DESCRIPTION</th>
+							    			<th></th>
+							    		</tr>
+							    	</thead>
+							    	<tbody>
+							    	<tr>
+							    		<td class="stationImage"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td class="stationGenre">Genre</td>
+								    	<td class="stationPlay"><div class="sprite_lower_tabs play2"></div></td>
+								    	<td class="stationDescription">Station Description Goes Here</td>
+								    	<td class="stationFavButton"><div class="sprite_lower_tabs favorite"></div></td>
+							    	</tr>
+							    	<tr>
+							    		<td class="stationImage"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td class="stationGenre">Genre</td>
+								    	<td class="stationPlay"><div class="sprite_lower_tabs play2"></div></td>
+								    	<td class="stationDescription">Station Description Goes Here</td>
+								    	<td class="stationFavButton"><div class="sprite_lower_tabs favorite"></div></td>
+							    	</tr>
+							    	<tr>
+							    		<td class="stationImage"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td class="stationGenre">Genre</td>
+								    	<td class="stationPlay"><div class="sprite_lower_tabs play2"></div></td>
+								    	<td class="stationDescription">Station Description Goes Here</td>
+								    	<td class="stationFavButton"><div class="sprite_lower_tabs favorite"></div></td>
+							    	</tr>
+							    	<tr>
+							    		<td class="stationImage"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td class="stationGenre">Genre</td>
+								    	<td class="stationPlay"><div class="sprite_lower_tabs play2"></div></td>
+								    	<td class="stationDescription">Station Description Goes Here</td>
+								    	<td class="stationFavButton"><div class="sprite_lower_tabs favorite"></div></td>
+							    	</tr>
+							    	
+							    	</tbody>
+							    </table>
+							</div>
+							
+						</div>
+					</div>	
+				</div>
+				
+				
+			</div>
+			
+<!-- PLAYLIST - MAIN TAB  -->
+			<div class="tab-pane" id="mainPlaylists">
+				<!-- PLAYLIST TAB -->
+				
+				<div class="clearLeftFloat">
+					<div class="tabbable tabs-left clearfix">				
+						<ul class="nav nav-tabs" id="profileNav">
+							<li><h6>PLAYLISTS</h6></li>
+							<li class="active"><a href="#stationsTab" data-toggle="tab">All</a></li>
+							<li><a href="#stationsTab" data-toggle="tab">FAVORITE</a></li>
+						</ul>
+<!-- PLAYLIST - ALL and FAVORITE TAB  -->					
+						<div class="tab-content">
+							<div class="tab-pane active" id="playlistTab">
+								<!-- STATIONS NEWS CONTENT -->
+								<div><h5>INDIE TRACKS</h5></div>
+								<table class="table table-condensed">
+							    	<thead>
+							    		<tr>
+							    			<th></th>
+							    			<th>TRACK</th>
+							    			<th>ARTIST</th>
+							    			<th>ALBUM</th>
+							    			<th>TIME</th>
+							    			<th></th>
+							    			<th></th>
+							    		</tr>
+							    	</thead>
+							    	<tbody>
+							    	<tr>
+								    	<td class="playlistPlay"><div class="sprite_lower_tabs play2"></div></td>
+							    		<td class="playlistSong">Little Pigs</td>
+								    	<td class="playlistArtist">Green Jelly</td>
+								    	<td class="playlistAlbum">Album Name</td>
+								    	<td class="playlistTime">Song Time</td>
+								    	<td class="playlistAddButton"><div class="sprite_lower_tabs add"></div></td>
+								    	<td class="playlistRemoveButton"><div class="sprite_lower_tabs remove"></div></td>
+							    	</tr>
+							    	<tr>
+								    	<td class="playlistPlay"><div class="sprite_lower_tabs play2"></div></td>
+							    		<td class="playlistSong">Little Pigs</td>
+								    	<td class="playlistArtist">Green Jelly</td>
+								    	<td class="playlistAlbum">Album Name</td>
+								    	<td class="playlistTime">Song Time</td>
+								    	<td class="playlistAddButton"><div class="sprite_lower_tabs add"></div></td>
+								    	<td class="playlistRemoveButton"><div class="sprite_lower_tabs remove"></div></td>
+							    	</tr>
+							    	<tr>
+								    	<td class="playlistPlay"><div class="sprite_lower_tabs play2"></div></td>
+							    		<td class="playlistSong">Little Pigs</td>
+								    	<td class="playlistArtist">Green Jelly</td>
+								    	<td class="playlistAlbum">Album Name</td>
+								    	<td class="playlistTime">Song Time</td>
+								    	<td class="playlistAddButton"><div class="sprite_lower_tabs add"></div></td>
+								    	<td class="playlistRemoveButton"><div class="sprite_lower_tabs remove"></div></td>
+							    	</tr>
+							    	<tr>
+								    	<td class="playlistPlay"><div class="sprite_lower_tabs play2"></div></td>
+							    		<td class="playlistSong">Little Pigs</td>
+								    	<td class="playlistArtist">Green Jelly</td>
+								    	<td class="playlistAlbum">Album Name</td>
+								    	<td class="playlistTime">Song Time</td>
+								    	<td class="playlistAddButton"><div class="sprite_lower_tabs add"></div></td>
+								    	<td class="playlistRemoveButton"><div class="sprite_lower_tabs remove"></div></td>
+							    	</tr>
+							    	
+							    	</tbody>
+							    </table>
+							</div>
+							
+						</div>
+					</div>	
+				</div>
+				
+			</div>
+			
+<!-- ARTISTS - MAIN TAB  -->			
+			<div class="tab-pane" id="mainArtists"><h2>ARTISTS TAB</h2></div>
 		</div>
 		
 		
-	</div>
-	<div class="span10">
+		
 		
 	</div>
+	
 </div>
+</section>
+
+<section id="tabContentMobile">
+		
+	    <ul class="nav nav-tabs textBlack" id="mobileTab">
+		    <li>
+		    	<!-- playlists -->
+		    	<div class="sprite_mobile_tabs playlist" data-toggle="tab" data-target="#playlistsMobile"></div>
+		    	<!-- <a href="#playlistsMobile" data-toggle="tab" class="sprite_mobile_tabs playlist"></a> -->		    	
+		    </li>
+		    <li>
+		    	<!-- stations -->
+		    	<div class="sprite_mobile_tabs station" data-toggle="tab" data-target="#stationsMobile"></div>
+		    	<!-- <a href="#stationsMobile" data-toggle="tab"><img src="http://lorempixel.com/78/50" /></a> -->
+		    <li>
+		    	<!-- artists -->
+		    	<div class="sprite_mobile_tabs artist" data-toggle="tab" data-target="#artistsMobile"></div>
+		    	<!-- <a href="#friendsMobile" data-toggle="tab"><img src="http://lorempixel.com/78/50" /></a> -->
+		    </li>
+		    <li>
+		    	<!-- news -->
+		    	<div class="sprite_mobile_tabs news" data-toggle="tab" data-target="#newsMobile"></div>
+		    	<!-- <a href="#newsMobile" data-toggle="tab"><img src="http://lorempixel.com/78/50" /></a> -->
+		    </li>
+	    </ul>
+	     
+	    <div class="tab-content textBlack ">
+	    	<div class="tab-pane active" id="playlistsMobile">
+	    		<!-- <div>Playlist Tab</div> -->
+    		    <button class="btn-block btn-info" data-toggle="collapse" data-parent="#playlistsMobile" data-target="#playlistsMenuMobile">
+					SELECT A PLAYLIST
+				</button>
+			
+				<div id="playlistsMenuMobile" class="accordion-body collapse" style="background: #333333; ">
+					<div class="accordion-inner">
+						<ul class="favMenu">
+							<li class="title">CHOOSE PLAYLIST</li>
+							<li><a href="">BELLY RUBBIN 101</a></li>
+							<li><a href="">REGGAE EXPLOSION 1</a></li>
+						</ul>
+					</div>
+				</div>
+	    		<div class="mobileTabContentInner">
+	    			
+    			    <table class="table table-condensed table-hover">
+				    	<thead>
+				    		<tr>
+				    			<th class="mobileNewsIcon"></th>
+				    			<th>Song/Artist</th>
+				    			<th></th>
+				    		</tr>
+				    	</thead>
+				    	<tbody>
+				    		<tr>
+				    			<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+				    			<td>
+				    				<div>Mmmm Bop</div>
+				    				<div>Hansen Brothers</div>
+				    			</td>
+				    			<td><div class="sprite_lower_tabs play2"></div></td>
+				    		</tr>
+				    		<tr>
+				    			<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+				    			<td>
+				    				<div>Mmmm Bop</div>
+				    				<div>Hansen Brothers</div>
+				    			</td>
+				    			<td><div class="sprite_lower_tabs play2"></div></td>
+				    		</tr>
+				    	</tbody>
+				    </table> 
+				    
+	    		</div>
+	    	</div>
+	    	<div class="tab-pane" id="stationsMobile">
+    		
+    			<button class="btn-block btn-info" data-toggle="collapse" data-parent="#stationsMenuMobile" data-target="#stationsMenuMobile">
+					SELECT A STATION
+				</button>
+			
+				<div id="stationsMenuMobile" class="accordion-body collapse" style="background: #333333; ">
+					<div class="accordion-inner">
+						<ul class="favMenu">
+							<li class="title">CHOOSE STATION</li>
+							<li><a href="">ALTERNATIVE METAL</a></li>
+							<li><a href="">REGGAE</a></li>
+						</ul>
+					</div>
+					
+					
+				</div>
+				
+	    		<div class="mobileTabContentInner">
+	    			
+    			    <table class="table table-condensed table-hover">
+				    	<thead>
+				    		<tr>
+				    			<th></th>
+				    			<th>GENRE</th>
+				    			<th>DESCRIPTION</th>
+				    			<th></th>
+				    		</tr>
+				    	</thead>
+				    	<tbody>
+				    		<tr>
+				    			<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+				    			<td>Metal</td>
+				    			<td>Here is a descriptive line.</td>
+				    			<td><div class="sprite_lower_tabs play2"></div></td>
+				    		</tr>
+				    		<tr>
+				    			<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+				    			<td>Alternative</td>
+				    			<td>Here is a descriptive line.</td>
+				    			<td><div class="sprite_lower_tabs play2"></div></td>
+				    		</tr>
+				    	</tbody>
+				    </table> 
+				    
+	    		</div>
+	    		
+	    		
+	    	</div>
+	    	<div class="tab-pane" id="artistsMobile">
+	    		
+	    		<button class="btn-block btn-info" data-toggle="collapse" data-parent="#artistsMobile" data-target="#artistsMenuMobile">
+					VIEW ARTISTS
+				</button>
+				
+				
+				<div id="artistsMenuMobile" class="accordion-body collapse" style="background: #333333; ">
+					
+				<!--
+					<div class="accordion-inner">
+						<ul class="favMenu">
+							<li class="title">CURRENT FRIENDS</li>
+							<li><a href="">Iggy Pop</a></li>
+							<li><a href="">Sams Jams</a></li>
+						</ul>
+					</div>
+				-->
+				</div>
+	    	
+	    		<div class="mobileTabContentInner">
+	    			Artist Content and Layout TBD	    			
+	    		</div>
+	    	</div>
+	    	<div class="tab-pane" id="newsMobile">
+				
+				<!--
+				<button class="btn-block btn-info" data-toggle="collapse" data-parent="#newsMenuMobile" data-target="#newsMenuMobile">
+					SELECT A NEWS FEED
+				</button>
+				
+				<div id="newsMenuMobile" class="accordion-body collapse" style="background: #333333; ">
+					<div class="accordion-inner">
+						<ul class="favMenu">
+							<li class="title">CHOOSE PLAYLIST</li>
+							<li><a href="">WORKOUT ROCK</a></li>
+							<li><a href="">HEAD BUSTING JAMS</a></li>
+						</ul>
+					</div>
+				</div>
+				-->
+				<div class="mobileTabContentInner">
+	    			
+    			    <table class="table table-condensed table-hover">
+				    	<thead>
+				    		<tr>
+				    			<th></th>
+				    			<th></th>
+				    			<th></th>
+				    			<th></th>
+				    		</tr>
+				    	</thead>
+				    	<tbody>
+				    		<tr>
+				    			<td class="mobileNewsIcon"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+				    			<td>
+				    				<div class="mobileNewsName">FRANK OCEAN</div>
+				    				<div class="mobileNewsContent">News content text and stuff.</div>
+				    				<div class="mobileNewsImage"></div>
+				    			</td>
+				    			<td class="mobileNewsDate">Apr 15</td>
+				    		</tr>
+				    		<tr>
+				    			<td class="mobileNewsIcon"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+				    			<td>
+				    				<div class="mobileNewsName">FRANK OCEAN</div>
+				    				<div class="mobileNewsContent">News content text and stuff.</div>
+				    				<div class="mobileNewsImage"><img src="http://lorempixel.com/g/200/100" /></div>
+				    			</td>
+				    			<td class="mobileNewsDate">Apr 15</td>
+				    		</tr>
+				    		<tr>
+				    			<td class="mobileNewsIcon"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+				    			<td>
+				    				<div class="mobileNewsName">FRANK OCEAN</div>
+				    				<div class="mobileNewsContent">News content text and stuff.</div>
+				    				<div class="mobileNewsImage"></div>
+				    			</td>
+				    			<td class="mobileNewsDate">Apr 15</td>
+				    		</tr>
+				    	</tbody>
+				    </table> 
+				    
+	    		</div>
+			</div>
+	    </div>
+	     
+	
+	
+	
+	
+	
 </section>
 
 <footer id="footer">
@@ -433,10 +984,10 @@
     <!-- Button to trigger modal -->
     <!-- <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a> -->
      
-    <!-- Modal -->
+       <!-- Playlist Modal -->
     <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	    <div class="modal-header">
-	    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
 	    	<h5 id="myModalLabel">SELECT A PLAYLIST</h5>
 	    </div>
 	    <div class="modal-body">
@@ -454,10 +1005,201 @@
 			</label>
 	    </div>
 	    <div class="modal-footer">
-	    	<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-	    	<button class="btn btn-primary">Save changes</button>
+	    	<button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
 	    </div>
     </div>
+    
+    <!-- Search Modal -->
+    <div id="searchModal" class="modal modal- hide fade" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+	    <div class="modal-header">
+	    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	    	<div id="myModalLabel">
+	    		<div style="text-align: right; padding-right: 30px;">
+        
+    <form class="form-inline">
+	    <input type="text" class="input-xlarge" placeholder="search">
+		<select class="input-small">
+			<option>Songs</option>
+			<option>Artists</option>
+		</select>	    
+	    <button type="submit" class="btn btn-primary btn-small">GO</button>
+    </form>        
+        
+        
+         		
+	    		</div>
+	    	
+	    	
+	    	</div>
+	    </div>
+	    <div class="modal-body">
+			
+				<div class="tabbable tabs-left">				
+					<ul class="nav nav-tabs" id="searchPop" style="width:100px; float:left;">
+						<li>FILTER:</li>
+						<li class="active"><a href="#songRes" data-toggle="tab">all</a></li>
+						<li><a href="#artistRes" data-toggle="tab">Rock</a></li>
+						<li><a href="#songRes" data-toggle="tab">Alternative</a></li>
+						<li><a href="#artistRes" data-toggle="tab">Country</a></li>
+						<li><a href="#songRes" data-toggle="tab">Electronica</a></li>
+					</ul>
+					
+					<div class="tab-content">
+						<div class="tab-pane active" id="songRes">SEARCH RESULTS
+						
+							    <table class="table table-condensed table-hover">
+							    	<thead>
+							    	<tr>
+							    		<th width="40"></th>
+							    		<th>Songs</th>
+								    	<th>Artist</th>
+								    	<th>Genre</th>
+								    	<th width="50"><a href="">Filter</a>/<br /><a href="">View All</a></th>							    		
+							    	</tr>
+							    	</thead>
+							    	<tbody>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>Yeah Yeah Yeah</td>
+								    	<td>Frank Ocean</td>
+								    	<td>Electronica</td>
+								    	<td><a href="">Indie</a></td>								    		
+							    	</tr>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>How We Do (Party)</td>
+								    	<td>Rita Ora</td>
+								    	<td>Pop</td>
+								    	<td><a href="">Main</a></td>
+							    	</tr>
+							    	</tbody>
+							    </table>	
+							
+						</div>
+						<div class="tab-pane" id="artistRes">SEARCH RESULTS
+						
+							    <table class="table table-condensed table-hover">
+							    	<thead>							    		
+							    	<tr>
+							    		<th width="40"></th>
+								    	<th>Artist</th>
+								    	<th>City</th>
+								    	<th>Genre</th>
+								    	<th width="50">Filter/<br />View All</th>
+							    	</tr>
+							    	</thead>
+							    	<tbody>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>Frank Ocean</td>
+								    	<td>Boise</td>
+								    	<td class="centerText">Electronica</td>
+								    	<td class="centerText"><a href="">Indie</a></td>
+							    	</tr>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>Rita Ora</td>
+								    	<td>London</td>
+								    	<td class="centerText">Pop</td>
+								    	<td class="centerText"><a href="">Main</a></td>
+							    	</tr>
+							    	</tbody>
+							    </table>	
+							
+						</div>
+					</div>
+					
+				</div>		
+
+
+	    </div>
+	    <div class="modal-footer">
+	    	<button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
+	    </div>
+    </div>
+    
+    <!-- Mobile Search Modal -->
+    <div id="searchModalMobile" class="modal modal- hide fade" tabindex="-1" role="dialog" aria-labelledby="searchModalMobileLabel" aria-hidden="true">
+	    <div class="modal-header">
+	    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	    	<div>SEARCH RESULTS</div>
+	    </div>
+	    <div class="modal-body">
+			
+								
+					
+					
+					<div class="">
+						<div class="" id="resArtistSong">
+						
+							    <table class="table table-hover">
+							    	<thead>
+							    	<tr>
+							    		<th width="40"></th>
+							    		<th width="200">Songs/Artists</th>
+								    	<th width="60">Genre/Label</th>							    		
+							    	</tr>
+							    	</thead>
+							    	<tbody>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>
+								    		<div>Honey Boo Boo</div>
+								    		<div>Frank Ocean</div>
+								    	</td>
+								    	<td>								    		
+								    		<div>Electronica</div>
+								    		<div>Indie</div>
+								    	</td>								    		
+							    	</tr>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>
+								    		<div>How We Do (Party)</div>
+								    	</td>
+								    	<td>								    		
+								    		<div>Pop</div>
+								    		<div>Main</div>
+								    	</td>								    		
+							    	</tr>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>
+								    		<div>Honey Boo</div>
+								    		<div>Frank Ocean</div>
+								    	</td>
+								    	<td>								    		
+								    		<div>Electronica</div>
+								    		<div>Indie</div>
+								    	</td>								    		
+							    	</tr>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>
+								    		<div>How We Do</div>
+								    		<div>Rita Ora</div>
+								    	</td>
+								    	<td>								    		
+								    		<div>Pop</div>
+								    		<div>Main</div>
+								    	</td>								    		
+							    	</tr>
+							    	</tbody>
+							    </table>	
+							
+						</div>
+						
+					</div>
+					
+							
+
+
+	    </div>
+	    <div class="modal-footer">
+	    	<button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
+	    </div>
+    </div>
+    
 </div>
 <!--! end of #wrapper -->
 
@@ -483,7 +1225,9 @@
   <script defer src="js/vendor/bootstrap.js"></script>
   
   
+  
 	<script>
+				
 	  $(document).ready(function() {
 	    $("#slideButton").click(function () {
 	  		$("#slideMenu").toggle("slide", {}, 500);
@@ -505,6 +1249,8 @@
 		    }
 		  });
 		});
+		
+	  });
 	  
 	</script> 
   

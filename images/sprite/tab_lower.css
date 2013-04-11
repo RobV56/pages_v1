@@ -1,0 +1,26 @@
+/* ----------------------------------------------------
+   created with http://www.texturepacker.com 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:118c26cda345e3bfc1fd1c77b33f5c7f$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite_lower_tabs {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(images/sprites/tab_lower.png);}
+
+.add {width:30px; height:30px; background-position: -30px -0px}
+.add:hover {width:30px; height:30px; background-position: -0px -0px}
+.add:active {width:30px; height:30px; background-position: -0px -0px}
+.favorite {width:30px; height:30px; background-position: -30px -30px}
+.favorite:hover {width:30px; height:30px; background-position: -0px -30px}
+.favorite:active {width:30px; height:30px; background-position: -0px -30px}
+.play {width:30px; height:30px; background-position: -30px -60px}
+.play:hover {width:30px; height:30px; background-position: -0px -60px}
+.play:active {width:30px; height:30px; background-position: -0px -60px}
+.remove {width:30px; height:30px; background-position: -30px -90px}
+.remove:hover {width:30px; height:30px; background-position: -0px -90px}
+.remove:active {width:30px; height:30px; background-position: -0px -90px}
