@@ -7,6 +7,9 @@
 .textBlack {
 	color:#000;
 }
+.textRed {
+	color:#FC0101;
+}
 .clearLeftFloat  {
 	clear:left;
 	padding-top:15px;
@@ -14,6 +17,29 @@
 
 .table th .centerText , .table td .centerText {
 	text-align:center;
+}
+.indent10 {
+	margin-left:10px;
+}
+.borderTop1 {
+	border-top: 1px solid #DDDDDD;
+	padding:3px;
+	margin-bottom:10px;
+}
+.headerRow {
+	line-height:30px;
+	font-weight:bold;
+}
+input[type="file"] {
+	border-radius: 4px 4px 4px 4px;
+    color: #555555;
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    vertical-align: middle;
 }
 
 #searchModalMobile .table th, #searchModalMobile .table td {
@@ -199,9 +225,9 @@
 #resArtistSong {
 	width:258px;
 }
-input[type="search"], select, .btn-small  {
+input[type="search"], select, .btn-small, .btn-mini  {
 	border-radius: 0px;
-	font-size:12px;
+	font-size:10px;
 }
 
 .buttonX {
@@ -211,42 +237,42 @@ input[type="search"], select, .btn-small  {
 }
 .sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(../images/sprite/sprite_30x30.png);}
 
-.add {width:30px; height:30px; background-position: -0px -90px}
-.add:hover {width:30px; height:30px; background-position: -30px -90px}
-.add:active {width:30px; height:30px; background-position: -30px -90px}
-.dislike {width:30px; height:30px; background-position: -0px -60px}
-.dislike:hover {width:30px; height:30px; background-position: -30px -60px}
-.dislike:active {width:30px; height:30px; background-position: -60px -60px}
-.favorite {width:30px; height:30px; background-position: -0px -30px}
-.favorite:hover {width:30px; height:30px; background-position: -30px -30px}
-.favorite:active {width:30px; height:30px; background-position: -60px -30px}
-.like {width:30px; height:30px; background-position: -0px -0px}
-.like:hover {width:30px; height:30px; background-position: -30px -0px}
-.like:active {width:30px; height:30px; background-position: -60px -0px}
+.sprite.add {width:30px; height:30px; background-position: -0px -90px}
+.sprite.add:hover {width:30px; height:30px; background-position: -30px -90px}
+.sprite.add:active {width:30px; height:30px; background-position: -30px -90px}
+.sprite.dislike {width:30px; height:30px; background-position: -0px -60px}
+.sprite.dislike:hover {width:30px; height:30px; background-position: -30px -60px}
+.sprite.dislike:active {width:30px; height:30px; background-position: -60px -60px}
+.sprite.favorite {width:30px; height:30px; background-position: -0px -30px}
+.sprite.favorite:hover {width:30px; height:30px; background-position: -30px -30px}
+.sprite.favorite:active {width:30px; height:30px; background-position: -60px -30px}
+.sprite.like {width:30px; height:30px; background-position: -0px -0px}
+.sprite.like:hover {width:30px; height:30px; background-position: -30px -0px}
+.sprite.like:active {width:30px; height:30px; background-position: -60px -0px}
 
 .controls_sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(../images/sprite/controls_27x27.png);}
 
-.next {width:27px; height:27px; background-position: -27px -54px}
-.next:hover {width:27px; height:27px; background-position: -0px -54px}
-.pause {width:27px; height:27px; background-position: -27px -27px}
-.pause:hover {width:27px; height:27px; background-position: -0px -27px}
-.play {width:27px; height:27px; background-position: -27px -0px}
-.play:hover {width:27px; height:27px; background-position: -0px -0px}
+.controls_sprite.next {width:27px; height:27px; background-position: -27px -54px}
+.controls_sprite.next:hover {width:27px; height:27px; background-position: -0px -54px}
+.controls_sprite.pause {width:27px; height:27px; background-position: -27px -27px}
+.controls_sprite.pause:hover {width:27px; height:27px; background-position: -0px -27px}
+.controls_sprite.play {width:27px; height:27px; background-position: -27px -0px}
+.controls_sprite.play:hover {width:27px; height:27px; background-position: -0px -0px}
 
 .sprite_lower_tabs {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(../images/sprite/tab_lower.png);}
 
-.add {width:30px; height:30px; background-position: -30px -0px}
-.add:hover {width:30px; height:30px; background-position: -0px -0px}
-.add:active {width:30px; height:30px; background-position: -0px -0px}
-.favorite {width:30px; height:30px; background-position: -30px -30px}
-.favorite:hover {width:30px; height:30px; background-position: -0px -30px}
-.favorite:active {width:30px; height:30px; background-position: -0px -30px}
-.play2 {width:30px; height:30px; background-position: -30px -60px}
-.play2:hover {width:30px; height:30px; background-position: -0px -60px}
-.play2:active {width:30px; height:30px; background-position: -0px -60px}
-.remove {width:30px; height:30px; background-position: -30px -90px}
-.remove:hover {width:30px; height:30px; background-position: -0px -90px}
-.remove:active {width:30px; height:30px; background-position: -0px -90px}
+.sprite_lower_tabs.add {width:30px; height:30px; background-position: -30px -0px}
+.sprite_lower_tabs.add:hover {width:30px; height:30px; background-position: -0px -0px}
+.sprite_lower_tabs.add:active {width:30px; height:30px; background-position: -0px -0px}
+.sprite_lower_tabs.favorite {width:30px; height:30px; background-position: -30px -30px}
+.sprite_lower_tabs.favorite:hover {width:30px; height:30px; background-position: -0px -30px}
+.sprite_lower_tabs.favorite:active {width:30px; height:30px; background-position: -0px -30px}
+.sprite_lower_tabs.play {width:30px; height:30px; background-position: -30px -60px}
+.sprite_lower_tabs.play:hover {width:30px; height:30px; background-position: -0px -60px}
+.sprite_lower_tabs.play:active {width:30px; height:30px; background-position: -0px -60px}
+.sprite_lower_tabs.remove {width:30px; height:30px; background-position: -30px -90px}
+.sprite_lower_tabs.remove:hover {width:30px; height:30px; background-position: -0px -90px}
+.sprite_lower_tabs.remove:active {width:30px; height:30px; background-position: -0px -90px}
 
 /* ------------------------------------------------------------------ Large Style -------------*/
 
@@ -275,7 +301,7 @@ input[type="search"], select, .btn-small  {
 	float:left;
 }
 
-#profileNav {
+#profileNav, #stationsNav, #playlistNav, #artistNav {
 	width:140px; 
 	float:left;
 	margin-right:-1px;
@@ -284,6 +310,7 @@ input[type="search"], select, .btn-small  {
 	margin:0px 220px 0px 190px;
 	color:#000000;
 	padding:15px;
+	font-size:10px;
 }
 .tab-content a {
 	color:#000;
@@ -298,16 +325,28 @@ input[type="search"], select, .btn-small  {
 /* profile tab */
 
 #profileImage {
-	width:150px;
-	height:100px;
-	float:left;
+	width:140px;
+	height:140px;
 }
-#profileInterests, #profileName {
+#profileName {
 	font-weight:bold;
 	text-transform: capitalize;
-	padding:0px 25px 5px 25px;
-	margin-left:150px;
+	padding:0px 10px 20px 10px;
+	XXXmargin-left:150px;
 	font-size:11px;
+}
+#profileInterestsTitle {
+	font-weight:bold;
+	text-transform: capitalize;
+	padding:0px 10px 10px 10px;
+	XXXmargin-left:150px;
+	font-size:11px;
+}
+#profileInterests {
+	padding:0px 10px 10px 10px;
+	XXXmargin-left:150px;
+	font-size:11px;
+	color:#777;
 }
 .profileLocation {
 	color:#777;
@@ -315,15 +354,36 @@ input[type="search"], select, .btn-small  {
 	text-transform: capitalize;
 	padding:0px 25px 5px 25px;
 }
-#profileInterestsTags {
-	padding:0px 25px 5px 25px;
-	color:#777;
+
+#artistName {
+	font-weight:bold;
+	text-transform: capitalize;
+	padding:0px 10px 20px 10px;
+	XXXmargin-left:150px;
 	font-size:11px;
-	margin-left:150px;
+}
+#artistURL {
+	font-weight:bold;
+	text-transform: capitalize;
+	padding:0px;
+	XXXmargin-left:150px;
+	font-size:11px;
+	text-align: right;
+}
+#artistBio {
+	padding:0px 10px 10px 10px;
+	XXXmargin-left:150px;
+	font-size:11px;
+	color:#777;
 }
 
-#profileTab, #newsTab, #stationsTab, #playlistTab {
-	padding:0px 10px;
+#playlistDelete {
+	padding:10px 0px;
+	text-align:right;
+}
+
+#profileTab, #newsTab, #stationsTab, #playlistTab, #artistNewsTab, #artistAlbumsTab, #artistPlaylistsTab, #albumsTab {
+	padding:0px 10px 10px 10px;
 	border:1px solid #DDDDDD;
 	font-size:10px;
 }
@@ -757,7 +817,7 @@ body {
 	background:#666;
 }
 
-#profileNav {
+#profileNav, #stationsNav, #playlistNav, #artistNav {
 	width:120px; 
 	float:left;
 	margin-right:-1px;
@@ -790,16 +850,28 @@ body {
 /* profile tab */
 
 #profileImage {
-	width:150px;
-	height:100px;
-	float:left;
+	width:140px;
+	height:140px;
 }
-#profileInterests, #profileName {
+#profileName {
 	font-weight:bold;
 	text-transform: capitalize;
-	padding:0px 25px 5px 25px;
-	margin-left:150px;
+	padding:0px 10px 20px 10px;
+	XXXmargin-left:150px;
 	font-size:11px;
+}
+#profileInterestsTitle {
+	font-weight:bold;
+	text-transform: capitalize;
+	padding:0px 10px 10px 10px;
+	XXXmargin-left:150px;
+	font-size:11px;
+}
+#profileInterests {
+	padding:0px 10px 10px 10px;
+	XXXmargin-left:150px;
+	font-size:11px;
+	color:#777;
 }
 .profileLocation {
 	color:#777;
@@ -807,18 +879,46 @@ body {
 	text-transform: capitalize;
 	padding:0px 25px 5px 25px;
 }
-#profileInterestsTags {
-	padding:0px 25px 5px 25px;
-	color:#777;
+
+#artistName {
+	font-weight:bold;
+	text-transform: capitalize;
+	padding:0px 10px 20px 10px;
+	XXXmargin-left:150px;
 	font-size:11px;
-	margin-left:150px;
 }
+#artistURL {
+	font-weight:bold;
+	text-transform: capitalize;
+	padding:0px 10px 10px 10px;
+	XXXmargin-left:150px;
+	font-size:11px;
+	text-align:right;
+}
+#artistBio {
+	padding:0px 10px 10px 10px;
+	XXXmargin-left:150px;
+	font-size:11px;
+	color:#777;
+}
+.profileLocation {
+	color:#777;
+	font-weight:bold;
+	text-transform: capitalize;
+	padding:0px 25px 5px 25px;
+}
+
+#playlistDelete {
+	padding:10px 0px;
+	text-align:right;
+}
+
 /*#profileTab, #newsTab {
 	padding:0px 10px 10px 0px;
 	border:1px solid #DDDDDD;
 }*/
-#profileTab, #newsTab, #stationsTab, #playlistTab {
-	padding:0px 10px;
+#profileTab, #newsTab, #stationsTab, #playlistTab, #albumsTab, #artistNewsTab, #artistPlaylistsTab, #artistAlbumsList {
+	padding:0px 10px 10px 10px;
 	border:1px solid #DDDDDD;
 	font-size:10px;
 }
@@ -1215,9 +1315,9 @@ body {
 	min-height:50px;
 }
 
-#tabContent .row-fluid {
-	display: none;
-}
+/*#tabContent .row-fluid {
+	//display: none;
+}*/
 
 
 	
@@ -1407,7 +1507,7 @@ body {
 	margin-bottom:0px;
 }
 .accordion-body {
-	margin-top:11px;
+	margin-top:0px;
 }
 #slideMenu {
 	position:absolute;
@@ -1589,7 +1689,21 @@ body {
 	display: none;
 }
 
-
+.mobileIcon {
+	width:30px;
+}
+.mobilePlaylistSong {
+	font-weight:bold;
+	font-size:120%;
+	margin:0px;
+	padding:0px;
+	line-height:14px;
+}
+.mobilePlaylistArtist {
+	margin:0px;
+	padding:0px;
+	line-height:14px;
+}
 #socialMediaMobile {
 	width:120px;
 	padding:10px 0px;
@@ -1658,7 +1772,8 @@ body {
 .favMenu li {
 	list-style:none;
 	padding:3px 0px;
-	border-top:1px solid #000;		
+	border-bottom:1px solid #000;	
+	color:#fff;	
 }
 .favMenu .title {
 	font-weight:bold;
@@ -1667,13 +1782,14 @@ body {
 }
 .favMenu li a {
 	padding:3px 0px 3px 15px;
+	color:#ffffff;	
 }
 #tabContentMobile {
 	font-size:10px;
 	color:#000;
 }
 #tabContentMobile a {
-	color:#000;
+	color:#fff;
 }
 #tabContentMobile .nav-tabs > li {
 	padding:0px;
@@ -1687,8 +1803,10 @@ body {
 #tabContentMobile .nav {
 	margin:0px;
 }
-#playlistsMenuMobile {
+#artistsMenuMobile, #stationsMenuMobile, #playlistsMenuMobile  {
 	z-index: 500;
+	background:#333333;
+	color:#fff;
 }
 .mobileTab {
 	margin:0px;
@@ -1710,8 +1828,19 @@ body {
 	
 }
 
+.tabMenuMobile {
+	background:#444344;
+}
 
-
+#artistMenuMobile {
+	background:#FC0101;
+}
+.navBorder li {
+	border-top:1px solid #999999;
+}
+.navBorder li  a {
+	color:#fff;
+}
 
 #tabContent {
 	display:none;

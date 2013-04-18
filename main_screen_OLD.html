@@ -24,8 +24,7 @@
   <!-- CSS: implied media=all -->
   <!-- CSS concatenated and minified via ant build script-->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-responsive.css"> 
-	<link rel="stylesheet" href="css/jquery-ui-1.10.2.custom.min.css"> 
+	<!-- <link rel="stylesheet" href="css/bootstrap-responsive.css">  -->
 	<link rel="stylesheet" href="css/master.css">
 	<link rel="stylesheet" href="css/main_screen.css">
 	<link type="text/css" href="css/blue.monday/jplayer.blue.monday.css" rel="stylesheet" />
@@ -411,229 +410,163 @@
 <!-- PROFILE - MAIN TAB  -->			
 			<div class="tab-pane active" id="mainProfile">
 				<!-- PROFILE TAB  -->
-				<div class="row-fluid">
-					<div class="span2">
-						<span id="profileImage"><img src="http://lorempixel.com/140/140/people" /></span>
-					</div>					
-					<div class="span10">
-						
-						<div class="row-fluid">
-							<div class="span12">
-								<div id="profileName">User Name <span class="profileLocation">City, State</span></div>
-							</div>
-						</div>
-						<div class="row-fluid">
-							<div class="span12">
-								<div id="profileInterestsTitle">Music Interests:</div>				
-								<div id="profileInterests">Here is a bunch of intersting content input by the user.</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				
-				
-				<!-- <div id="profileImage"><img src="http://lorempixel.com/140/140/people" /></div>
+				<div id="profileImage"><img src="http://lorempixel.com/150/100/people" /></div>
 				<div id="profileName">User Name <span class="profileLocation">City, State</span></div>
-				<div id="profileInterestsTitle">Music Interests:</div>				
-				<div id="profileInterests">Genre Tags</div> -->
+				<div id="profileInterests">Music Interests:</div>				
+				<div id="profileInterestsTags">Genre Tags</div>
 				<div class="clearLeftFloat">
 					<div class="tabbable tabs-left clearfix">				
 						<ul class="nav nav-tabs" id="profileNav">
 							<li class="active"><a href="#newsTab" data-toggle="tab">NEWS</a></li>
-							<li><a href="#albumsTab" data-toggle="tab">ALBUMS</a></li>
-								<li class="indent10"><a href="#albumsTab" data-toggle="tab">ALBUM 1</a></li>
-								<li class="indent10"><a href="#albumsTab" data-toggle="tab">ALBUM 2</a></li>
-								<li class="indent10"><a href="#albumsTab" data-toggle="tab">ALBUM 3</a></li>
 							<li><a href="#profileTab" data-toggle="tab">PROFILE</a></li>
 						</ul>
-						<div class="tab-content">
-<!-- PROFILE - NEWS FEED TAB  -->					
 						
+<!-- PROFILE - NEWS FEED TAB  -->					
+						<div class="tab-content">
 							<div class="tab-pane active" id="newsTab">
 								<!-- PROFILE NEWS CONTENT -->
 								<div><h5>NEWS FEED</h5></div>
-								<div class="row-fluid borderTop1">
-									<div class="span1 newsImageCell"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></div>
-									<div class="span3 newsNameCell">Frank Ocean</div>
-									<div class="span6">
-										<div class="newsMessage">Message Content Goes Here. Message Content Goes Here. Message Content Goes Here.</div>
-								    	<div class="newsImageAttach">
-								    		<!-- if there is an attachment -->
-								    		<img src="http://lorempixel.com/200/150/nightlife" />
-								    	</div>
-									</div>
-									<div class="span2 newsDate">Apr 13, 2013</div>							
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1 newsImageCell"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></div>
-									<div class="span3 newsNameCell">Ringo Starr and the Galaxy 3 Band</div>
-									<div class="span6">
-										<div class="newsMessage">Message Content Goes Here. Message Content Goes Here. Message Content Goes Here.</div>
-								    	<div class="newsImageAttach">
-								    		<!-- if there is an attachment -->
-								    	</div>	
-									</div>
-									<div class="span2 newsDate">Apr 13, 2013</div>							
-								</div>
-																
-							</div>
-											
-							
-<!-- PROFILE - ALBUMS TAB  -->					
-						
-							<div class="tab-pane" id="albumsTab">
-								
-								<!-- PROFILE ALBUMS CONTENT -->
-								<div><h5>[ALBUM TITLE]</h5></div>
-								<div class="row-fluid">
-									<div class="span1 headerRow"></div>
-									<div class="span4 headerRow">TRACK</div>
-									<!-- <div class="span3">ARTIST</div> -->
-									<div class="span4 headerRow">ARTIST</div>
-									<div class="span1 headerRow">TIME</div>
-									<div class="span1 headerRow"></div>
-									<div class="span1 headerRow"></div>								
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1"><span class="sprite_lower_tabs play"></span></div>
-									<div class="span4">Mmmm Bop</div>
-									<!-- <div class="span3">Hansen Revisited</div> -->
-									<div class="span4">Hansen (Featuring Andy Dick)</div>
-									<div class="span1">3:27</div>
-									<div class="span1"><span class="sprite_lower_tabs add"></span></div>
-									<div class="span1"><span class="sprite_lower_tabs remove"></span></div>								
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1"><span class="sprite_lower_tabs play"></span></div>
-									<div class="span4">Mmmm Bop</div>
-									<!-- <div class="span3">Hansen Revisited</div> -->
-									<div class="span4">Hansen (Featuring Andy Dick)</div>
-									<div class="span1">3:27</div>
-									<div class="span1"><span class="sprite_lower_tabs add"></span></div>
-									<div class="span1"><span class="sprite_lower_tabs remove"></span></div>								
-								</div>
-							
+								<table class="table table-condensed">
+							    	<tbody>
+							    	<tr>
+							    		<td class="newsImageCell"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td class="newsNameCell">Frank Ocean</td>
+								    	<td>
+								    		<div class="newsMessage">Message Content Goes Here. Message Content Goes Here. Message Content Goes Here.</div>
+								    		<div class="newsImageAttach"></div>
+								    	</td>
+								    	<td class="newsDateCell">
+								    		<div class="newsDate">Apr 13, 2013</div>
+								    	</td>
+							    	</tr>
+							    	<tr>
+							    		<td class="newsImageCell"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td class="newsNameCell">Frank Ocean</td>
+								    	<td class="centerText">
+								    		<div>Message Content Goes Here. Message Content Goes Here. Message Content Goes Here.</div>
+								    		<div><img src="http://lorempixel.com/200/150/nightlife" /></div>
+								    	</td>
+								    	<td class="newsDateCell">Apr 13, 2013</td>
+							    	</tr>
+							    	<tr>
+							    		<td class="newsImageCell"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td class="newsNameCell">Frank Ocean</td>
+								    	<td class="centerText">
+								    		<div>Message Content Goes Here. Message Content Goes Here. Message Content Goes Here.</div>
+								    		<div></div>
+								    	</td>
+								    	<td class="newsDateCell">Apr 13, 2013</td>
+							    	</tr>
+							    	</tbody>
+							    </table>
 							</div>
 							
-
 <!-- PROFILE - PROFILE UPDATE TAB  -->							
-						
 							<div class="tab-pane" id="profileTab">
 								<!-- PROFILE PROFILE CONTENT -->
 								<div>
-									<div><h5>USER INFO</h5></div>
-									
-									<div class="row-fluid">
-										<div class="span3">User Picture</div>
-										<div class="span9"><input type="file" name="" id="" /></div>
-									</div>
-									<div class="row-fluid">
-										<div class="span3">First Name</div>
-										<div class="span9"><input type="text" name="" id="" /></div>
-									</div>
-									<div class="row-fluid">
-										<div class="span3">Last Name</div>
-										<div class="span9"><input type="text" name="" id="" /></div>
-									</div>
-									<div class="row-fluid">
-										<div class="span3">City</div>
-										<div class="span9"><input type="text" name="" id="" /></div>
-									</div>
-									<div class="row-fluid">
-										<div class="span3">State</div>
-										<div class="span9">
-											<select name="state">
-												<option value="AL">AL</option>
-												<option value="AK">AK</option>
-												<option value="AZ">AZ</option>
-												<option value="AR">AR</option>
-												<option value="CA">CA</option>
-												<option value="CO">CO</option>
-												<option value="CT">CT</option>
-												<option value="DE">DE</option>
-												<option value="DC">DC</option>
-												<option value="FL">FL</option>
-												<option value="GA">GA</option>
-												<option value="HI">HI</option>
-												<option value="ID">ID</option>
-												<option value="IL">IL</option>
-												<option value="IN">IN</option>
-												<option value="IA">IA</option>
-												<option value="KS">KS</option>
-												<option value="KY">KY</option>
-												<option value="LA">LA</option>
-												<option value="ME">ME</option>
-												<option value="MD">MD</option>
-												<option value="MA">MA</option>
-												<option value="MI">MI</option>
-												<option value="MN">MN</option>
-												<option value="MS">MS</option>
-												<option value="MO">MO</option>
-												<option value="MT">MT</option>
-												<option value="NE">NE</option>
-												<option value="NV">NV</option>
-												<option value="NH">NH</option>
-												<option value="NJ">NJ</option>
-												<option value="NM">NM</option>
-												<option value="NY">NY</option>
-												<option value="NC">NC</option>
-												<option value="ND">ND</option>
-												<option value="OH">OH</option>
-												<option value="OK">OK</option>
-												<option value="OR">OR</option>
-												<option value="PA">PA</option>
-												<option value="RI">RI</option>
-												<option value="SC">SC</option>
-												<option value="SD">SD</option>
-												<option value="TN">TN</option>
-												<option value="TX">TX</option>
-												<option value="UT">UT</option>
-												<option value="VT">VT</option>
-												<option value="VA">VA</option>
-												<option value="WA">WA</option>
-												<option value="WV">WV</option>
-												<option value="WI">WI</option>
-												<option value="WY">WY</option>
-											</select>
-										</div>
-									</div>
-									<div class="row-fluid">
-										<div class="span3">Birthday</div>
-										<div class="span9">
-											<input type="text" id="datepicker" />
-										</div>
-									</div>
-									<div class="row-fluid">
-										<div class="span3">Gender</div>
-										<div class="span9">
-											<label class="radio inline">
-											<input type="radio" name="gender" id="genderRadios1" value="Male"> 	Male
-											</label>
-											<label class="radio inline">
-											<input type="radio" name="gender" id="genderRadios2" value="Female"> 	Female
-											</label>
-										</div>
-									</div>
-									<div class="row-fluid">
-										<div class="span3">Music Interests</div>
-										<div class="span9">
-											<textarea name="" id=""></textarea>
-										</div>
-									</div>
-									<div class="row-fluid">
-										<div class="span3"></div>
-										<div class="span9">
-											<button class="btn btn-info">SAVE</button>
-										</div>
-									</div>
-									
+										<div><h5>USER INFO</h5></div>
+									<table class="table table-condensed">
+								    	<tbody>
+								    	<tr>
+								    		<td>User Picture</td>
+									    	<td>
+									    		<input type="file" name="" id="" />												
+									    	</td>
+								    	</tr>
+								    	<tr>
+								    		<td>First Name</td>
+									    	<td>
+									    		<input type="text" name="" id="" />
+									    	</td>
+								    	</tr>
+								    	<tr>
+								    		<td>Last Name</td>
+									    	<td>
+									    		<input type="text" name="" id="" />
+									    	</td>
+								    	</tr>
+								    	<tr>
+								    		<td>Ciy</td>
+									    	<td>
+									    		<input type="text" name="" id="" />
+									    	</td>
+								    	</tr>
+								    	<tr>
+								    		<td>State</td>
+									    	<td>
+												<select name="state">
+													<option value="AL">AL</option>
+													<option value="AK">AK</option>
+													<option value="AZ">AZ</option>
+													<option value="AR">AR</option>
+													<option value="CA">CA</option>
+													<option value="CO">CO</option>
+													<option value="CT">CT</option>
+													<option value="DE">DE</option>
+													<option value="DC">DC</option>
+													<option value="FL">FL</option>
+													<option value="GA">GA</option>
+													<option value="HI">HI</option>
+													<option value="ID">ID</option>
+													<option value="IL">IL</option>
+													<option value="IN">IN</option>
+													<option value="IA">IA</option>
+													<option value="KS">KS</option>
+													<option value="KY">KY</option>
+													<option value="LA">LA</option>
+													<option value="ME">ME</option>
+													<option value="MD">MD</option>
+													<option value="MA">MA</option>
+													<option value="MI">MI</option>
+													<option value="MN">MN</option>
+													<option value="MS">MS</option>
+													<option value="MO">MO</option>
+													<option value="MT">MT</option>
+													<option value="NE">NE</option>
+													<option value="NV">NV</option>
+													<option value="NH">NH</option>
+													<option value="NJ">NJ</option>
+													<option value="NM">NM</option>
+													<option value="NY">NY</option>
+													<option value="NC">NC</option>
+													<option value="ND">ND</option>
+													<option value="OH">OH</option>
+													<option value="OK">OK</option>
+													<option value="OR">OR</option>
+													<option value="PA">PA</option>
+													<option value="RI">RI</option>
+													<option value="SC">SC</option>
+													<option value="SD">SD</option>
+													<option value="TN">TN</option>
+													<option value="TX">TX</option>
+													<option value="UT">UT</option>
+													<option value="VT">VT</option>
+													<option value="VA">VA</option>
+													<option value="WA">WA</option>
+													<option value="WV">WV</option>
+													<option value="WI">WI</option>
+													<option value="WY">WY</option>
+												</select>									    		
+									    	</td>
+								    	</tr>
+								    	<tr>
+								    		<td>Music Interests</td>
+									    	<td>
+									    		<input type="text" name="" id="" />
+									    	</td>
+								    	</tr>
+								    	<tr>
+								    		<td></td>
+									    	<td>
+									    		<button class="btn btn-info">SAVE</button>
+									    	</td>
+								    	</tr>
+								    	</tbody>
+								    </table>
 								</div>
 							</div>
-							
-						</div> <!-- end of .tab-content -->
-					
-					
+						</div>
 					</div>	
 				</div>
 			
@@ -646,50 +579,61 @@
 				
 				<div class="clearLeftFloat">
 					<div class="tabbable tabs-left clearfix">				
-						<ul class="nav nav-tabs" id="stationsNav">
+						<ul class="nav nav-tabs" id="profileNav">
 							<li><h6>STATIONS</h6></li>
 							<li class="active"><a href="#stationsTab" data-toggle="tab">All</a></li>
-							<li><a href="#stationsFavTab" data-toggle="tab">FAVORITE</a></li>
+							<li><a href="#stationsTab" data-toggle="tab">FAVORITE</a></li>
 						</ul>
-						<div class="tab-content">
 <!-- STATIONS - ALL and FAVORITE TAB  -->					
-						
+						<div class="tab-content">
 							<div class="tab-pane active" id="stationsTab">
 								<!-- STATIONS NEWS CONTENT -->
 								<div><h5>STATIONS</h5></div>
-								
-								<div class="row-fluid headerRow">
-									<div class="span1"></div>
-									<div class="span3">NAME</div>
-									<div class="span1"></div>
-									<div class="span4">DESCRIPTION</div>
-									<div class="span2">GENRE</div>
-									<div class="span1"></div>
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1 stationImage"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></div>
-									<div class="span3 stationName">Euro Hickabilly</div>
-									<div class="span1 stationPlay"><span class="sprite_lower_tabs play"></span></div>
-									<div class="span4 stationDescription">Featuring hits like "Cotton Eyed Joe" and "The Way I Mate" by The Rednexx</div>
-									<div class="span2 stationGenre">Country Rock</div>
-									<div class="span1 stationFavButton"><span class="sprite_lower_tabs favorite"></span></div>
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1 stationImage"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></div>
-									<div class="span3 stationName">Euro Hickabilly</div>
-									<div class="span1 stationPlay"><span class="sprite_lower_tabs play"></span></div>
-									<div class="span4 stationDescription">Featuring hits like "Cotton Eyed Joe" and "The Way I Mate" by The Rednexx</div>
-									<div class="span2 stationGenre">Country Rock</div>
-									<div class="span1 stationFavButton"><span class="sprite_lower_tabs favorite"></span></div>
-								</div>
-								
-								
+								<table class="table table-condensed">
+							    	<thead>
+							    		<tr>
+							    			<th></th>
+							    			<th>GENRE</th>
+							    			<th></th>
+							    			<th>DESCRIPTION</th>
+							    			<th></th>
+							    		</tr>
+							    	</thead>
+							    	<tbody>
+							    	<tr>
+							    		<td class="stationImage"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td class="stationGenre">Genre</td>
+								    	<td class="stationPlay"><div class="sprite_lower_tabs play2"></div></td>
+								    	<td class="stationDescription">Station Description Goes Here</td>
+								    	<td class="stationFavButton"><div class="sprite_lower_tabs favorite"></div></td>
+							    	</tr>
+							    	<tr>
+							    		<td class="stationImage"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td class="stationGenre">Genre</td>
+								    	<td class="stationPlay"><div class="sprite_lower_tabs play2"></div></td>
+								    	<td class="stationDescription">Station Description Goes Here</td>
+								    	<td class="stationFavButton"><div class="sprite_lower_tabs favorite"></div></td>
+							    	</tr>
+							    	<tr>
+							    		<td class="stationImage"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td class="stationGenre">Genre</td>
+								    	<td class="stationPlay"><div class="sprite_lower_tabs play2"></div></td>
+								    	<td class="stationDescription">Station Description Goes Here</td>
+								    	<td class="stationFavButton"><div class="sprite_lower_tabs favorite"></div></td>
+							    	</tr>
+							    	<tr>
+							    		<td class="stationImage"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td class="stationGenre">Genre</td>
+								    	<td class="stationPlay"><div class="sprite_lower_tabs play2"></div></td>
+								    	<td class="stationDescription">Station Description Goes Here</td>
+								    	<td class="stationFavButton"><div class="sprite_lower_tabs favorite"></div></td>
+							    	</tr>
+							    	
+							    	</tbody>
+							    </table>
 							</div>
 							
-						</div> <!-- end of .tab-content -->
-		
-						
-						
+						</div>
 					</div>	
 				</div>
 				
@@ -702,216 +646,84 @@
 				
 				<div class="clearLeftFloat">
 					<div class="tabbable tabs-left clearfix">				
-						<ul class="nav nav-tabs" id="playlistNav">
+						<ul class="nav nav-tabs" id="profileNav">
 							<li><h6>PLAYLISTS</h6></li>
-							<li class="text-right"><span id="playlistCreate"><button class="btn btn-link btn-mini">+ add playlist</button></span></li>
-							<li class="active"><a href="#playlistTab" data-toggle="tab">ALL</a></li>
-							<li><a href="#playlistTab" data-toggle="tab">PLAYLIST 1</a></li>
-							<li><a href="#playlistTab" data-toggle="tab">PLAYLIST 2</a></li>
-							<li><a href="#playlistTab" data-toggle="tab">PLAYLIST 3</a></li>
-							<li class="text-right"><span id="playlistCreate"><button class="btn btn-link btn-mini">+ add playlist</button></span></li>
+							<li class="active"><a href="#stationsTab" data-toggle="tab">All</a></li>
+							<li><a href="#stationsTab" data-toggle="tab">FAVORITE</a></li>
 						</ul>
-
-						<div class="tab-content artistTab">
 <!-- PLAYLIST - ALL and FAVORITE TAB  -->					
-						
+						<div class="tab-content">
 							<div class="tab-pane active" id="playlistTab">
 								<!-- STATIONS NEWS CONTENT -->
-								<div class="row-fluid">
-									<div class="span8"><h5>PLAYLIST NAME</h5></div>
-									<div class="span4 text-right" ><span id="playlistDelete"><button class="btn btn-link btn-mini textRed">- remove playlist</button></span></div>
-								</div>
-								
-								<div class="row-fluid headerRow">
-									<div class="span1"></div>
-									<div class="span3">TRACK</div>
-									<div class="span2">ARTIST</div>
-									<div class="span3">ALBUM</div>
-									<div class="span1">TIME</div>
-									<div class="span1"></div>
-									<div class="span1"></div>
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1 playlistPlay"><span class="sprite_lower_tabs play"></div>
-									<div class="span3 playlistSong">Little Pigs, Little Pigs</div>
-									<div class="span2 playlistArtist">Green Jelly</span></div>
-									<div class="span3 playlistAlbum">Mother Goose on Crack</div>
-									<div class="span1 playlistSongTime">3:17</div>
-									<div class="span1 playlistAddButton"><span class="sprite_lower_tabs add"></span></div>
-									<div class="span1 playlistRemoveButton"><span class="sprite_lower_tabs remove"></span></div>
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1 playlistPlay"><span class="sprite_lower_tabs play"></div>
-									<div class="span3 playlistSong">Nightmare on Sesame Street</div>
-									<div class="span2 playlistArtist">Green Jelly</span></div>
-									<div class="span3 playlistAlbum">Mother Goose on Crack</div>
-									<div class="span1 playlistSongTime">2:03</div>
-									<div class="span1 playlistAddButton"><span class="sprite_lower_tabs add"></span></div>
-									<div class="span1 playlistRemoveButton"><span class="sprite_lower_tabs remove"></span></div>
-								</div>
-								
+								<div><h5>INDIE TRACKS</h5></div>
+								<table class="table table-condensed">
+							    	<thead>
+							    		<tr>
+							    			<th></th>
+							    			<th>TRACK</th>
+							    			<th>ARTIST</th>
+							    			<th>ALBUM</th>
+							    			<th>TIME</th>
+							    			<th></th>
+							    			<th></th>
+							    		</tr>
+							    	</thead>
+							    	<tbody>
+							    	<tr>
+								    	<td class="playlistPlay"><div class="sprite_lower_tabs play2"></div></td>
+							    		<td class="playlistSong">Little Pigs</td>
+								    	<td class="playlistArtist">Green Jelly</td>
+								    	<td class="playlistAlbum">Album Name</td>
+								    	<td class="playlistTime">Song Time</td>
+								    	<td class="playlistAddButton"><div class="sprite_lower_tabs add"></div></td>
+								    	<td class="playlistRemoveButton"><div class="sprite_lower_tabs remove"></div></td>
+							    	</tr>
+							    	<tr>
+								    	<td class="playlistPlay"><div class="sprite_lower_tabs play2"></div></td>
+							    		<td class="playlistSong">Little Pigs</td>
+								    	<td class="playlistArtist">Green Jelly</td>
+								    	<td class="playlistAlbum">Album Name</td>
+								    	<td class="playlistTime">Song Time</td>
+								    	<td class="playlistAddButton"><div class="sprite_lower_tabs add"></div></td>
+								    	<td class="playlistRemoveButton"><div class="sprite_lower_tabs remove"></div></td>
+							    	</tr>
+							    	<tr>
+								    	<td class="playlistPlay"><div class="sprite_lower_tabs play2"></div></td>
+							    		<td class="playlistSong">Little Pigs</td>
+								    	<td class="playlistArtist">Green Jelly</td>
+								    	<td class="playlistAlbum">Album Name</td>
+								    	<td class="playlistTime">Song Time</td>
+								    	<td class="playlistAddButton"><div class="sprite_lower_tabs add"></div></td>
+								    	<td class="playlistRemoveButton"><div class="sprite_lower_tabs remove"></div></td>
+							    	</tr>
+							    	<tr>
+								    	<td class="playlistPlay"><div class="sprite_lower_tabs play2"></div></td>
+							    		<td class="playlistSong">Little Pigs</td>
+								    	<td class="playlistArtist">Green Jelly</td>
+								    	<td class="playlistAlbum">Album Name</td>
+								    	<td class="playlistTime">Song Time</td>
+								    	<td class="playlistAddButton"><div class="sprite_lower_tabs add"></div></td>
+								    	<td class="playlistRemoveButton"><div class="sprite_lower_tabs remove"></div></td>
+							    	</tr>
+							    	
+							    	</tbody>
+							    </table>
 							</div>
 							
-						</div> <!-- end of .tab-content -->
+						</div>
 					</div>	
 				</div>
 				
 			</div>
 			
 <!-- ARTISTS - MAIN TAB  -->			
-			<div class="tab-pane" id="mainArtists">
-
-				<!-- PROFILE TAB  -->
-				<div class="row-fluid">
-					<div class="span2"><img src="http://lorempixel.com/140/140/music" /></div>
-					<div class="span10">
-						<div class="row-fluid">
-							<div class="span8" id="artistName">Artist Name <span class="profileLocation">City, State</span></div>
-							<div class="span4" id="artistURL"><button class="btn btn-link btn-mini">OFFICIAL WEBSITE</button></div>
-						</div>
-						<div class="row-fluid">
-							<div class="span12" id="artistBio">This is artist bio information...</div>
-						</div>
-						
-					</div>
-					
-				</div>
-					
-				<div class="clearLeftFloat">
-					<div class="tabbable tabs-left clearfix">				
-						<ul class="nav nav-tabs" id="artistNav">
-							<li class="active bold"><a href="#artistNewsTab" data-toggle="tab">NEWS</a></li>
-							<li class="bold"><a href="#artistAlbumsTab" data-toggle="tab">ALBUMS</a></li>
-								<li class="indent10"><a href="#artistAlbumsTab" data-toggle="tab">ALBUM 1</a></li>
-								<li class="indent10"><a href="#artistAlbumsTab" data-toggle="tab">ALBUM 2</a></li>
-								<li class="indent10"><a href="#artistAlbumsTab" data-toggle="tab">ALBUM 3</a></li>
-							<li class="bold"><a href="#artistPlaylistsTab" data-toggle="tab">PLAYLISTS</a></li>
-								<li class="indent10"><a href="#artistPlaylistsTab" data-toggle="tab">PLAYLIST 1</a></li>
-								<li class="indent10"><a href="#artistPlaylistsTab" data-toggle="tab">PLAYLIST 2</a></li>
-								<li class="indent10"><a href="#artistPlaylistsTab" data-toggle="tab">PLAYLIST 3</a></li>
-								
-							
-						</ul>
-						<div class="tab-content">						
-<!-- ARTISTS - NEWS FEED TAB  -->
-							
-							<div class="tab-pane active" id="artistNewsTab">
-								<!-- ARTISTS NEWS CONTENT -->
-								<div><h5>NEWS FEED</h5></div>
-								<div class="row-fluid borderTop1">
-									<div class="span1 newsImageCell"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></div>
-									<div class="span3 newsNameCell">Frank Ocean</div>
-									<div class="span6">
-										<div class="newsMessage">Message Content Goes Here. Message Content Goes Here. Message Content Goes Here.</div>
-								    	<div class="newsImageAttach">
-								    		<?-- if there is an attachment -->
-								    		<img src="http://lorempixel.com/200/150/nightlife" />
-								    	</div>
-									</div>
-									<div class="span2 newsDate">Apr 13, 2013</div>							
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1 newsImageCell"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></div>
-									<div class="span3 newsNameCell">Ringo Starr and the Galaxy 3 Band</div>
-									<div class="span6">
-										<div class="newsMessage">Message Content Goes Here. Message Content Goes Here. Message Content Goes Here.</div>
-								    	<div class="newsImageAttach">
-								    		<?-- if there is an attachment -->
-								    	</div>	
-									</div>
-									<div class="span2 newsDate">Apr 13, 2013</div>							
-								</div>
-							</div>
-							
-<!-- ARTISTS - ALBUMS TAB  -->
-							
-							<div class="tab-pane" id="artistAlbumsTab">
-								<!-- ARTISTS ALBUMS CONTENT -->
-								<div><h5>ALBUMS TAB</h5></div>
-								<div class="row-fluid">
-									<div class="span1 headerRow"></div>
-									<div class="span4 headerRow">TRACK</div>
-									<!-- <div class="span3">ARTIST</div> -->
-									<div class="span4 headerRow">ARTIST</div>
-									<div class="span1 headerRow">TIME</div>
-									<div class="span1 headerRow"></div>
-									<div class="span1 headerRow"></div>								
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1"><span class="sprite_lower_tabs play"></span></div>
-									<div class="span4">Mmmm Bop</div>
-									<!-- <div class="span3">Hansen Revisited</div> -->
-									<div class="span4">Hansen (Featuring Andy Dick)</div>
-									<div class="span1">3:27</div>
-									<div class="span1"><span class="sprite_lower_tabs add"></span></div>
-									<div class="span1"><span class="sprite_lower_tabs remove"></span></div>								
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1"><span class="sprite_lower_tabs play"></span></div>
-									<div class="span4">Mmmm Bop</div>
-									<!-- <div class="span3">Hansen Revisited</div> -->
-									<div class="span4">Hansen (Featuring Andy Dick)</div>
-									<div class="span1">3:27</div>
-									<div class="span1"><span class="sprite_lower_tabs add"></span></div>
-									<div class="span1"><span class="sprite_lower_tabs remove"></span></div>								
-								</div>
-							</div>							
-						
-<!-- ARTISTS - PLAYLISTS TAB  -->
-							
-							<div class="tab-pane" id="artistPlaylistsTab">
-								<!-- ARTISTS PLAYLIST CONTENT -->
-								<div class="row-fluid">
-									<div class="span8"><h5>PLAYLIST NAME</h5></div>
-									<div class="span4 text-right" ><span id="playlistDelete"><button class="btn btn-link btn-mini">remove playlist</button></span></div>
-								</div>
-								
-								<div class="row-fluid headerRow">
-									<div class="span1"></div>
-									<div class="span3">TRACK</div>
-									<div class="span2">ARTIST</div>
-									<div class="span3">ALBUM</div>
-									<div class="span1">TIME</div>
-									<div class="span1"></div>
-									<div class="span1"></div>
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1 playlistPlay"><span class="sprite_lower_tabs play"></div>
-									<div class="span3 playlistSong">Little Pigs, Little Pigs</div>
-									<div class="span2 playlistArtist">Green Jelly</span></div>
-									<div class="span3 playlistAlbum">Mother Goose on Crack</div>
-									<div class="span1 playlistSongTime">3:17</div>
-									<div class="span1 playlistAddButton"><span class="sprite_lower_tabs add"></span></div>
-									<div class="span1 playlistRemoveButton"><span class="sprite_lower_tabs remove"></span></div>
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1 playlistPlay"><span class="sprite_lower_tabs play"></div>
-									<div class="span3 playlistSong">Nightmare on Sesame Street</div>
-									<div class="span2 playlistArtist">Green Jelly</span></div>
-									<div class="span3 playlistAlbum">Mother Goose on Crack</div>
-									<div class="span1 playlistSongTime">2:03</div>
-									<div class="span1 playlistAddButton"><span class="sprite_lower_tabs add"></span></div>
-									<div class="span1 playlistRemoveButton"><span class="sprite_lower_tabs remove"></span></div>
-								</div>
-								
-							</div>					
-						
-						</div>	 <!-- end of .tab-content -->	
-							
-						</div>
-					</div>	
-				</div>
-			
-			
-			</div>		
-		
-		
+			<div class="tab-pane" id="mainArtists"><h2>ARTISTS TAB</h2></div>
 		</div>
 		
 		
 		
 		
-	<!-- </div> -->
+	</div>
 	
 </div>
 </section>
@@ -947,9 +759,10 @@
 					SELECT A PLAYLIST
 				</button>
 			
-				<div id="playlistsMenuMobile" class="accordion-body collapse" >
+				<div id="playlistsMenuMobile" class="accordion-body collapse" style="background: #333333; ">
 					<div class="accordion-inner">
 						<ul class="favMenu">
+							<li class="title">CHOOSE PLAYLIST</li>
 							<li><a href="">BELLY RUBBIN 101</a></li>
 							<li><a href="">REGGAE EXPLOSION 1</a></li>
 						</ul>
@@ -962,25 +775,25 @@
 				    		<tr>
 				    			<th class="mobileNewsIcon"></th>
 				    			<th>Song/Artist</th>
-				    			<th class="mobileIcon"></th>
+				    			<th></th>
 				    		</tr>
 				    	</thead>
 				    	<tbody>
 				    		<tr>
-				    			<td class="mobileIcon"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+				    			<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
 				    			<td>
-				    				<div class="mobilePlaylistSong">Mmmm Bop</div>
-				    				<div class="mobilePlaylistArtist">Hansen Brothers</div>
+				    				<div>Mmmm Bop</div>
+				    				<div>Hansen Brothers</div>
 				    			</td>
-				    			<td class="mobileIcon"><div class="sprite_lower_tabs play"></div></td>
+				    			<td><div class="sprite_lower_tabs play2"></div></td>
 				    		</tr>
 				    		<tr>
-				    			<td class="mobileIcon"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+				    			<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
 				    			<td>
-				    				<div class="mobilePlaylistSong">Mmmm Bop</div>
-				    				<div class="mobilePlaylistArtist">Hansen Brothers</div>
+				    				<div>Mmmm Bop</div>
+				    				<div>Hansen Brothers</div>
 				    			</td>
-				    			<td class="mobileIcon"><div class="sprite_lower_tabs play"></div></td>
+				    			<td><div class="sprite_lower_tabs play2"></div></td>
 				    		</tr>
 				    	</tbody>
 				    </table> 
@@ -993,9 +806,10 @@
 					SELECT A STATION
 				</button>
 			
-				<div id="stationsMenuMobile" class="accordion-body collapse" >
+				<div id="stationsMenuMobile" class="accordion-body collapse" style="background: #333333; ">
 					<div class="accordion-inner">
 						<ul class="favMenu">
+							<li class="title">CHOOSE STATION</li>
 							<li><a href="">ALTERNATIVE METAL</a></li>
 							<li><a href="">REGGAE</a></li>
 						</ul>
@@ -1020,13 +834,13 @@
 				    			<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
 				    			<td>Metal</td>
 				    			<td>Here is a descriptive line.</td>
-				    			<td><div class="sprite_lower_tabs play"></div></td>
+				    			<td><div class="sprite_lower_tabs play2"></div></td>
 				    		</tr>
 				    		<tr>
 				    			<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
 				    			<td>Alternative</td>
 				    			<td>Here is a descriptive line.</td>
-				    			<td><div class="sprite_lower_tabs play"></div></td>
+				    			<td><div class="sprite_lower_tabs play2"></div></td>
 				    		</tr>
 				    	</tbody>
 				    </table> 
@@ -1038,72 +852,31 @@
 	    	<div class="tab-pane" id="artistsMobile">
 	    		
 	    		<button class="btn-block btn-info" data-toggle="collapse" data-parent="#artistsMobile" data-target="#artistsMenuMobile">
-					SELECT FAVORITE ARTIST
+					VIEW ARTISTS
 				</button>
 				
 				
-				<div id="artistsMenuMobile" class="accordion-body collapse" >
+				<div id="artistsMenuMobile" class="accordion-body collapse" style="background: #333333; ">
 					
-				
+				<!--
 					<div class="accordion-inner">
 						<ul class="favMenu">
-							<li><a href="">FRANK OCEAN</a></li>
-							<li><a href="">BILLY TALENT</a></li>
-							<li><a href="">SHANIA TWAIN</a></li>
+							<li class="title">CURRENT FRIENDS</li>
+							<li><a href="">Iggy Pop</a></li>
+							<li><a href="">Sams Jams</a></li>
 						</ul>
 					</div>
-				
+				-->
 				</div>
 	    	
 	    		<div class="mobileTabContentInner">
-	    			
-	    			<table class="table table-condensed table-hover">
-				    	<thead>
-				    		<tr>
-				    			<th></th>
-				    			<th></th>
-				    			<th></th>
-				    			<th></th>
-				    		</tr>
-				    	</thead>
-				    	<tbody>
-				    		<tr>
-				    			<td class="mobileNewsIcon"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
-				    			<td>
-				    				<div class="mobileNewsName">FRANK OCEAN</div>
-				    				<div class="mobileNewsContent">News content text and stuff.</div>
-				    				<div class="mobileNewsImage"></div>
-				    			</td>
-				    			<td class="mobileNewsDate">Apr 15</td>
-				    		</tr>
-				    		<tr>
-				    			<td class="mobileNewsIcon"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
-				    			<td>
-				    				<div class="mobileNewsName">FRANK OCEAN</div>
-				    				<div class="mobileNewsContent">News content text and stuff.</div>
-				    				<div class="mobileNewsImage"><img src="http://lorempixel.com/g/200/100" /></div>
-				    			</td>
-				    			<td class="mobileNewsDate">Apr 15</td>
-				    		</tr>
-				    		<tr>
-				    			<td class="mobileNewsIcon"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
-				    			<td>
-				    				<div class="mobileNewsName">FRANK OCEAN</div>
-				    				<div class="mobileNewsContent">News content text and stuff.</div>
-				    				<div class="mobileNewsImage"></div>
-				    			</td>
-				    			<td class="mobileNewsDate">Apr 15</td>
-				    		</tr>
-				    	</tbody>
-				    </table>
-	    			
-	    				    			
+	    			Artist Content and Layout TBD	    			
 	    		</div>
 	    	</div>
 	    	<div class="tab-pane" id="newsMobile">
 				
-				
-				<!-- <button class="btn-block btn-info" data-toggle="collapse" data-parent="#newsMenuMobile" data-target="#newsMenuMobile">
+				<!--
+				<button class="btn-block btn-info" data-toggle="collapse" data-parent="#newsMenuMobile" data-target="#newsMenuMobile">
 					SELECT A NEWS FEED
 				</button>
 				
@@ -1115,8 +888,8 @@
 							<li><a href="">HEAD BUSTING JAMS</a></li>
 						</ul>
 					</div>
-				</div> -->
-				
+				</div>
+				-->
 				<div class="mobileTabContentInner">
 	    			
     			    <table class="table table-condensed table-hover">
@@ -1141,7 +914,7 @@
 				    		<tr>
 				    			<td class="mobileNewsIcon"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
 				    			<td>
-				    				<div class="mobileNewsName">Billy Talent</div>
+				    				<div class="mobileNewsName">FRANK OCEAN</div>
 				    				<div class="mobileNewsContent">News content text and stuff.</div>
 				    				<div class="mobileNewsImage"><img src="http://lorempixel.com/g/200/100" /></div>
 				    			</td>
@@ -1150,7 +923,7 @@
 				    		<tr>
 				    			<td class="mobileNewsIcon"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
 				    			<td>
-				    				<div class="mobileNewsName">Shania Twain</div>
+				    				<div class="mobileNewsName">FRANK OCEAN</div>
 				    				<div class="mobileNewsContent">News content text and stuff.</div>
 				    				<div class="mobileNewsImage"></div>
 				    			</td>
@@ -1210,8 +983,6 @@
 
     <!-- Button to trigger modal -->
     <!-- <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a> -->
-   
-   
      
        <!-- Playlist Modal -->
     <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -1237,8 +1008,6 @@
 	    	<button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
 	    </div>
     </div>
-    
-    
     
     <!-- Search Modal -->
     <div id="searchModal" class="modal modal- hide fade" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
@@ -1454,7 +1223,6 @@
   <script defer src="js/plugins.js"></script>
   <script defer src="js/script.js"></script>
   <script defer src="js/vendor/bootstrap.js"></script>
-  <script type="text/javascript" src="js/vendor/jquery-ui-1.10.2.custom.min.js"></script>
   
   
   
@@ -1483,19 +1251,8 @@
 		});
 		
 	  });
-	   	
+	  
 	</script> 
-	<script>
-		$(function() {
-			var year = new Date().getFullYear();
-			$( "#datepicker" ).datepicker({
-				changeMonth: true,
-				changeYear: true,
-				maxDate: 0,
-				yearRange: (year - 100) + ":" + year,
-			});
-		});		
-	</script>
   
   <!-- end scripts-->
 
