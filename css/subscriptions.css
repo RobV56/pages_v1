@@ -317,22 +317,22 @@
 	background:#fff;
 	margin:0px;
 	padding:0px;
-	height:500px;
+	height:593px;
+	position:relative;
+	color:#000;
+	font-size:10px;
+}
+.subColBodyArtist {
+	background:#fff;
+	margin:0px;
+	padding:0px;
+	height:770px;
 	position:relative;
 	color:#000;
 	font-size:10px;
 }
 #subCol1, #subCol2, #subCol3 {
 	border:1px solid #272727;
-}
-.subColBodyArtist {
-	background:#fff;
-	margin:0px;
-	padding:0px;
-	height:555px;
-	position:relative;
-	color:#000;
-	font-size:10px;
 }
 
 #subCol1 .title, #subCol2 .title, #subCol3 .title {
