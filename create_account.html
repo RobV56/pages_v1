@@ -1,0 +1,246 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" href="css/jquery-ui-1.10.2.custom.min.css"> 
+	<link rel="stylesheet" href="css/master.css">
+	<link rel="stylesheet" href="css/accounts.css">
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <!-- <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> -->
+</head>
+
+<body>
+
+<div id="wrapper">
+	
+	<header id="header">
+		<div id="logo"><img src="images/logo_v1.png"></div>
+		<div id="logo_lo"><img src="images/logo_v2.png"></div>
+	</header>
+	
+	<section class="callToAction">
+		<div class="callToActionTitle">CREATE YOUR ACCOUNT</div>
+		<div class="callToActionAlt">ALREADY HAVE AN ACCOUNT?  <a href="">LOG IN HERE</a></div>
+	</section>
+	
+	<section id="contentZone" class="bgDkGray">
+		
+		<form name="" id="" action="">		
+			<div class="row-fluid">
+				<div class="span6">
+					<label>NAME</label>
+					<input class="input-small span12" type="text" placeholder="first name">
+				</div>
+				<div class="span6">
+					<label><br /></label>
+					<input class="input-small span12" type="text" placeholder="last name">
+				</div>
+			</div>	
+			<div class="row-fluid">
+				<div class="span6">
+					<label>PASSWORD</label>
+					<input class="input-small span12" type="text" placeholder="password">
+				</div>
+				<div class="span6">
+					<label><br /></label>
+					<input class="input-small span12" type="text" placeholder="confirm password">
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span6">
+					<label>USERNAME</label>
+					<input class="input-small span12" type="text" placeholder="username">
+				</div>
+				<div class="span6">
+					<label>LOCATION</label>
+					<input class="input-small span6" type="text" placeholder="city">
+					<select class="input-small span6" name="state">
+						<option value="AL">AL</option>
+						<option value="AK">AK</option>
+						<option value="AZ">AZ</option>
+						<option value="AR">AR</option>
+						<option value="CA">CA</option>
+						<option value="CO">CO</option>
+						<option value="CT">CT</option>
+						<option value="DE">DE</option>
+						<option value="DC">DC</option>
+						<option value="FL">FL</option>
+						<option value="GA">GA</option>
+						<option value="HI">HI</option>
+						<option value="ID">ID</option>
+						<option value="IL">IL</option>
+						<option value="IN">IN</option>
+						<option value="IA">IA</option>
+						<option value="KS">KS</option>
+						<option value="KY">KY</option>
+						<option value="LA">LA</option>
+						<option value="ME">ME</option>
+						<option value="MD">MD</option>
+						<option value="MA">MA</option>
+						<option value="MI">MI</option>
+						<option value="MN">MN</option>
+						<option value="MS">MS</option>
+						<option value="MO">MO</option>
+						<option value="MT">MT</option>
+						<option value="NE">NE</option>
+						<option value="NV">NV</option>
+						<option value="NH">NH</option>
+						<option value="NJ">NJ</option>
+						<option value="NM">NM</option>
+						<option value="NY">NY</option>
+						<option value="NC">NC</option>
+						<option value="ND">ND</option>
+						<option value="OH">OH</option>
+						<option value="OK">OK</option>
+						<option value="OR">OR</option>
+						<option value="PA">PA</option>
+						<option value="RI">RI</option>
+						<option value="SC">SC</option>
+						<option value="SD">SD</option>
+						<option value="TN">TN</option>
+						<option value="TX">TX</option>
+						<option value="UT">UT</option>
+						<option value="VT">VT</option>
+						<option value="VA">VA</option>
+						<option value="WA">WA</option>
+						<option value="WV">WV</option>
+						<option value="WI">WI</option>
+						<option value="WY">WY</option>
+					</select>
+				</div>
+			</div>
+				
+			<div class="row-fluid">
+				<div class="span6">
+					<label>GENDER</label>
+					<label class="radio inline">
+						<input type="radio" name="gender" id="genderRadios1" value="Male"> 	Male
+					</label>
+					<label class="radio inline">
+						<input type="radio" name="gender" id="genderRadios2" value="Female"> 	Female
+					</label>
+				</div>
+				<div class="span6">
+					<label>DATE OF BIRTH</label>
+					<input class="input-small span12" type="text" id="datepicker" />
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span6">
+					<label><br /></label>
+					<label class="checkbox">
+						<input type="checkbox"> I have rean and agree to the <a href="" class="textBlue">Terms of Service</a>
+					</label>
+				</div>
+				<div class="span6 text-right">
+					<label><br /></label>
+					<button type="button" class="btn btn-danger btn-small">CANCEL</button>					
+					<button type="submit" class="btn btn-info btn-small">SIGN UP</button>
+				</div>
+			</div>
+		</form>
+		
+	</section>
+	
+	
+	
+	
+	
+	<section id="actionButtons">
+		<div class="action">
+			<a href="">compare ourtunez</a>
+		</div>
+		<div class="action">
+			<a href="">band sign-up</a>
+		</div>
+	</section>
+	
+	<section id="footerMed">
+		<section id="socialMedia">
+			<div class="socialIcons"><a href=""><img src="images/twitter_30.png" /></a></div>
+			<div class="socialIcons"><a href=""><img src="images/facebook_30.png" /></a></div>
+			<div class="socialIcons"><a href=""><img src="images/youtube_30.png" /></a></div>
+		</section>	
+	</section>
+	
+</div>	
+<!--! end of #wrapper -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  
+  
+  <script type="text/javascript" src="js/vendor/jquery-ui-1.10.2.custom.min.js"></script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+	
+	
+	<script>
+		$(function() {
+			var year = new Date().getFullYear();
+			$( "#datepicker" ).datepicker({
+				changeMonth: true,
+				changeYear: true,
+				maxDate: 0,
+				yearRange: (year - 100) + ":" + year,
+			});
+		});		
+	</script>
+	
+	
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>

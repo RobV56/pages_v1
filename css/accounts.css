@@ -1,0 +1,709 @@
+
+/* -------------  Ourtunez Subscription Pages -------------- */
+
+.bgGreen {
+	background:#7fc751;
+}
+.bgGray {
+	background:#b7c3c3;
+}
+.bgDkGray {
+	background:#393839;
+}
+.bgOrange {
+	background:#f3cb4d;
+}
+.bgBlue {
+	background:#4884e2;
+}
+.bgWhite {
+	background:#ffffff;
+}
+#contentZone a:link, 
+#contentZone a:visited,
+.callToAction a:link, 
+.callToAction a:visited  {
+	color:#00e5fe;
+} 
+#contentZone a:hover,
+.callToAction a:hover {
+	color:#fff;
+}
+.btn {
+	border-radius:0px;
+}
+.detailBox {
+	background:#fff;
+	padding:10px;
+	color:#000;
+	font-weight:bold;
+}
+.detailDivider {
+	padding-top:10px;
+	border-top:1px solid #3d3d3d;
+}
+label, input, button, select, textarea {
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 14px;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    border-radius: 0px;
+    color: #555555;
+    display: inline-block;
+    font-size: 11px;
+    height: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    vertical-align: middle;
+}
+.radio, .checkbox {
+    min-height: 14px;
+    padding-left: 20px;
+}
+
+
+
+
+/* ------------------------------------------------------------------ Large Style -------------*/
+
+@media only screen and (min-width: 1250px) {
+	
+#wrapper {
+	width:1250px;
+	margin:0px auto;
+	padding:0px 0px 100px 0px;
+	background:transparent url(../images/bg_dj_v1_1250w.png) center top no-repeat;
+	position:relative;
+}
+
+
+#header {
+	width:800px;
+	margin:0px auto;
+	min-height:120px;
+	position:relative;
+	background: transparent url(../images/bg_login_header_med1.png) top left no-repeat;
+}
+#logo_lo {
+	display:none;
+}
+#logo {
+	position:absolute;
+	bottom:0px;
+	left:15px;
+}
+.callToAction {
+	width:800px;
+	margin:0px auto;
+	padding:20px;
+}
+.callToActionTitle {
+	text-align:center;
+	font-size:205%;
+	font-weight:bold;
+	line-height:20px;
+}
+
+.callToActionAlt {
+	text-align:center;
+	line-height:20px;
+
+}
+#contentZone {
+	width:720px;
+	padding:40px;
+	margin:0px auto;
+	border:1px solid #272727;
+	font-size:10px;
+	
+}
+.titleBox {
+	height:50px;
+	text-align:center;
+	color:#fff;
+}
+.altBox {
+	padding:10px 15px;
+	text-align:left;
+	font-weight:bold;
+	color:#fff;
+	font-size:10px;
+}
+
+.subColBody {
+	background:#fff;
+	margin:0px;
+	padding:0px;
+	height:510px;
+	position:relative;
+	color:#000;
+	font-size:10px;
+}
+.subColBodyArtist {
+	background:#fff;
+	margin:0px;
+	padding:0px;
+	height:555px;
+	position:relative;
+	color:#000;
+	font-size:10px;
+}
+#subCol1, #subCol2, #subCol3 {
+	border:1px solid #272727;
+}
+#subCol1 .title, #subCol2 .title, #subCol3 .title {
+	font-weight:bold;
+	font-size:14px;
+	padding-top:12px;
+	color:#fff;
+}
+#subCol1 .title {
+	padding:18px;
+}
+#subCol1 .alt, #subCol2 .alt, #subCol3 .alt {
+	font-weight:bold;
+	font-size:10px;
+}
+.colHeader {
+	padding:15px;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	background:#393839;
+	color:#fff;
+}
+.buttonBox, .buttonBoxUp, .buttonBoxDown {
+	position:absolute;
+	left:12px;
+	bottom:12px;
+	width:90%;
+} 
+.buttonBox {
+	position:absolute;
+	left:12px;
+	bottom:12px;
+	width:90%;
+}
+.buttonBoxCancel {
+	padding-top:10px;
+	position:absolute;
+	left:12px;
+	bottom:12px;
+	width:90%;
+}
+.subMsg {
+	text-align:center;
+	padding:3px 10px;
+}
+
+.featuresBox {
+	padding:0px;
+}
+.featuresBox ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.featuresBox ul li {
+	border-bottom: 1px solid gray;
+	padding:10px 15px;
+	font-weight:bold;
+}
+
+
+
+
+
+
+#actionButtons {
+	width:135px;
+	position:absolute;
+	left:px;
+	top:245px;
+	border:1px solid #000;
+	border-left:0px;
+}
+.action a {
+	background:#272627;
+	display:block;
+	padding:15px 10px;
+	font-size:90%;
+	border-bottom:1px solid #000;
+}
+.iconBox {
+	width:133px;
+	height:133px;
+	float:left;
+	padding:0px;
+	margin:0px;
+	position:relative;
+}
+.iconName {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:100px;
+	padding:3px;
+	background:#2b2b2b;
+	font-size:65%;
+	
+}
+#socialMedia {
+	position:absolute;
+	bottom:20px;
+	left:15px;
+}
+.socialIcons {
+	width:30px;
+	height:30px;
+	float:left;
+	padding:0px 5px;
+}	
+
+#footerMed {
+	clear:right;
+	width:300px;
+	background:none;
+	height:70px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+	
+}
+
+/* ------------------------------------------------------------------- Medium Style ----- */
+
+@media only screen and (min-width: 800px) and (max-width: 1249px) {
+	
+#wrapper {
+	width:800px;
+	margin:0px auto;
+	padding:0px;
+	background:transparent url(../images/bg_dj_v1_1250w.png) center top no-repeat;
+	position:relative;
+}
+
+
+#header {
+	width:800px;
+	margin:0px auto;
+	min-height:120px;
+	position:relative;
+	background: transparent url(../images/bg_login_header_med1.png) top left no-repeat;
+}
+
+
+
+#logo_lo {
+	display:none;
+}
+#logo {
+	position:absolute;
+	bottom:0px;
+	left:15px;
+}
+
+
+
+.callToAction {
+	width:800px;
+	margin:0px auto;
+	padding:20px;
+}
+.callToActionTitle {
+	text-align:center;
+	font-size:205%;
+	font-weight:bold;
+	line-height:20px;
+}
+
+.callToActionAlt {
+	text-align:center;
+	line-height:20px;
+
+}
+
+#contentZone {
+	width:720px;
+	padding:40px;
+	margin:0px auto;
+	border:1px solid #272727;
+	font-size:10px;
+	
+}
+.titleBox {
+	height:50px;
+	text-align:center;
+	color:#fff;
+}
+.altBox {
+	padding:10px 15px;
+	text-align:left;
+	font-weight:bold;
+	color:#fff;
+	font-size:10px;
+}
+
+.subColBody {
+	background:#fff;
+	margin:0px;
+	padding:0px;
+	height:500px;
+	position:relative;
+	color:#000;
+	font-size:10px;
+}
+#subCol1, #subCol2, #subCol3 {
+	border:1px solid #272727;
+}
+.subColBodyArtist {
+	background:#fff;
+	margin:0px;
+	padding:0px;
+	height:555px;
+	position:relative;
+	color:#000;
+	font-size:10px;
+}
+
+#subCol1 .title, #subCol2 .title, #subCol3 .title {
+	font-weight:bold;
+	font-size:14px;
+	padding-top:12px;
+	color:#fff;
+}
+#subCol1 .title {
+	padding:18px;
+}
+#subCol1 .alt, #subCol2 .alt, #subCol3 .alt {
+	font-weight:bold;
+	font-size:10px;
+}
+.colHeader {
+	padding:15px;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	background:#393839;
+	color:#fff;
+}
+
+.buttonBox, .buttonBoxUp, .buttonBoxDown {
+	position:absolute;
+	left:12px;
+	bottom:12px;
+	width:90%;
+} 
+.buttonBoxCancel {
+	position:absolute;
+	left:12px;
+	bottom:12px;
+	width:90%;
+}
+.subMsg {
+	text-align:center;
+	padding:3px 10px;
+}
+
+.featuresBox {
+	padding:0px;
+}
+.featuresBox ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.featuresBox ul li {
+	border-bottom: 1px solid gray;
+	padding:10px 15px;
+	font-weight:bold;
+}
+
+
+
+
+
+
+.iconBox {
+	width:133px;
+	height:133px;
+	float:left;
+	padding:0px;
+	margin:0px;
+	position:relative;
+}
+.iconName {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:100px;
+	padding:3px;
+	background:#2b2b2b;
+	font-size:65%;
+	
+}
+#footerMed {
+	clear:all;
+	background:#999999;
+	position:relative;
+	border-top:1px solid #000;
+	height:70px;
+	z-index: 10;
+}
+#socialMedia {
+	position:absolute;
+	bottom:20px;
+	left:15px;
+}
+.socialIcons {
+	width:30px;
+	height:30px;
+	float:left;
+	padding:0px 5px;
+}	
+	
+
+#actionButtons {
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	width:350px;
+	height:50px;
+	z-index: 20;
+}
+.action {
+	width:120px;
+	padding:15px;
+	background:#272627;
+	text-align:center;
+	display:inline;
+	border:1px solid #000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin:0px 5px;
+}
+.action a {
+	background:#272627;
+	width:100px;
+	display:inline-block;
+	padding:15px 10px;
+	font-size:90%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#panel {
+	padding:50px;
+	display:none;
+}
+
+	
+}
+
+/* ------------------------------------------------------------------ Mobile Style ------- */
+
+@media only screen and (max-width: 799px) {
+
+	
+#wrapper {
+	width:320px;
+	margin:0px auto;
+	padding:0px;
+	background:#fff;
+	position:relative;
+}
+
+
+#header {
+	width:320px;
+	height:40px;
+	margin:0px auto;
+	position:relative;
+	background: transparent url(../images/bg_login_header_med1.png) top right no-repeat;
+}
+#logo {
+	display:none;
+}
+#logo_lo {
+	padding:10px;
+}
+
+
+
+
+.callToAction {
+	background:#000;
+	width:280px;
+	margin:0px auto;
+	padding:20px;
+}
+.callToActionTitle {
+	text-align:center;
+	font-size:160%;
+	font-weight:bold;
+	line-height:20px;
+}
+
+.callToActionAlt {
+	text-align:center;
+	line-height:20px;
+	font-size:80%;
+
+}
+#contentZone {
+	width:320px;
+	padding:0px;
+	margin:0px auto;
+	
+}
+.titleBox {
+	height:50px;
+	text-align:center;
+	color:#fff;
+}
+.altBox {
+	padding:10px 15px;
+	text-align:left;
+	font-weight:bold;
+	color:#fff;
+	font-size:10px;
+}
+
+.subColBody {
+	background:#fff;
+	margin:0px;
+	padding:0px 0px 55px 0px;
+	position:relative;
+	color:#000;
+	font-size:10px;
+}
+
+#subCol1 .title, #subCol2 .title, #subCol3 .title {
+	font-weight:bold;
+	font-size:14px;
+	padding-top:12px;
+	color:#fff;
+}
+#subCol1 .title {
+	padding:18px;
+}
+#subCol1 .alt, #subCol2 .alt, #subCol3 .alt {
+	font-weight:bold;
+	font-size:10px;
+}
+.colHeader {
+	padding:15px;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	background:#393839;
+	color:#fff;
+}
+.buttonBox {
+	position:absolute;
+	left:12px;
+	bottom:12px;
+	width:90%;
+}
+.buttonBoxCancel {
+	position:absolute;
+	left:12px;
+	bottom:12px;
+	width:90%;
+}
+.subMsg {
+	text-align:center;
+	padding:3px 10px;
+}
+
+.featuresBox {
+	padding:0px;
+}
+.featuresBox ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.featuresBox ul li {
+	border-bottom: 1px solid gray;
+	padding:10px 15px;
+	font-weight:bold;
+}
+
+
+
+.iconBox {
+	width:106px;
+	height:106px;
+	float:left;
+	padding:0px;
+	margin:0px;
+	position:relative;
+}
+.iconName {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:90px;
+	padding:3px;
+	background:#2b2b2b;
+	font-size:65%;
+	
+}
+#footerMed {
+	clear:all;
+	background:#fff;
+	position:relative;
+	border-top:1px solid #000;
+	height:70px;
+	z-index: 10;
+}
+#socialMedia {
+	width:210px;
+	margin:20px auto;
+}
+.socialIcons {
+	width:30px;
+	height:30px;
+	float:left;
+	padding:0px 20px;
+}	
+	
+
+#actionButtons {
+	clear:all;
+	height:60px;
+	background:#272627;
+}
+.action {
+	width:155px;
+	height:58px;
+	padding:0px;
+	background:#272627;
+	text-align:center;
+	display:inline-block;
+	margin:0px;
+}
+.action a {
+	background:#272627;
+	width:158px;
+	height:58px;
+	display:inline-block;
+	padding:20px 0px;
+	font-size:90%;
+	border:1px solid #000;
+	margin:0px;
+}
+
+#panel {
+	padding:50px;
+	display:none;
+}
+	
+	
+}
