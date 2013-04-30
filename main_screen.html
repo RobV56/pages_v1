@@ -72,16 +72,23 @@
 					    <button type="submit" class="btn btn-info btn-small" data-target="#searchModal" data-toggle="modal">GO</button>
 					</form> 					
 				</div> 
+			
+				<div id="searchBarMobile">
+					<form class="form-inline">
+					    <input type="search" class="" placeholder="search">    
+					    <button type="submit" class="btn btn-info btn-small" data-target="#searchModalMobile" data-toggle="modal">GO</button>
+					</form>
+				</div>	
 			</div>
 		</div>
 	</header>
 	
-	<div id="searchBarMobile">
+	<!-- <div id="searchBarMobile">
 		<form class="form-inline">
 		    <input type="search" class="" placeholder="search">    
 		    <button type="submit" class="btn btn-info btn-small" data-target="#searchModalMobile" data-toggle="modal">GO</button>
 		</form>
-	</div>	
+	</div> -->	
 	
 	<section id="playZone">
 		
@@ -441,10 +448,7 @@
 					<div class="tabbable tabs-left clearfix">				
 						<ul class="nav nav-tabs" id="profileNav">
 							<li class="active"><a href="#newsTab" data-toggle="tab">NEWS</a></li>
-							<li><a href="#albumsTab" data-toggle="tab">ALBUMS</a></li>
-								<li class="indent10"><a href="#albumsTab" data-toggle="tab">ALBUM 1</a></li>
-								<li class="indent10"><a href="#albumsTab" data-toggle="tab">ALBUM 2</a></li>
-								<li class="indent10"><a href="#albumsTab" data-toggle="tab">ALBUM 3</a></li>
+							
 							<li><a href="#profileTab" data-toggle="tab">PROFILE</a></li>
 						</ul>
 						<div class="tab-content">
@@ -480,41 +484,6 @@
 							</div>
 											
 							
-<!-- PROFILE - ALBUMS TAB  -->					
-						
-							<div class="tab-pane" id="albumsTab">
-								
-								<!-- PROFILE ALBUMS CONTENT -->
-								<div><h5>[ALBUM TITLE]</h5></div>
-								<div class="row-fluid">
-									<div class="span1 headerRow"></div>
-									<div class="span4 headerRow">TRACK</div>
-									<!-- <div class="span3">ARTIST</div> -->
-									<div class="span4 headerRow">ARTIST</div>
-									<div class="span1 headerRow">TIME</div>
-									<div class="span1 headerRow"></div>
-									<div class="span1 headerRow"></div>								
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1"><span class="sprite_lower_tabs play"></span></div>
-									<div class="span4">Mmmm Bop</div>
-									<!-- <div class="span3">Hansen Revisited</div> -->
-									<div class="span4">Hansen (Featuring Andy Dick)</div>
-									<div class="span1">3:27</div>
-									<div class="span1"><span class="sprite_lower_tabs add"></span></div>
-									<div class="span1"><span class="sprite_lower_tabs remove"></span></div>								
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1"><span class="sprite_lower_tabs play"></span></div>
-									<div class="span4">Mmmm Bop</div>
-									<!-- <div class="span3">Hansen Revisited</div> -->
-									<div class="span4">Hansen (Featuring Andy Dick)</div>
-									<div class="span1">3:27</div>
-									<div class="span1"><span class="sprite_lower_tabs add"></span></div>
-									<div class="span1"><span class="sprite_lower_tabs remove"></span></div>								
-								</div>
-							
-							</div>
 							
 
 <!-- PROFILE - PROFILE UPDATE TAB  -->							
@@ -762,7 +731,7 @@
 			<div class="tab-pane" id="mainArtists">
 
 				<!-- PROFILE TAB  -->
-				<div class="row-fluid">
+				<!-- <div class="row-fluid">
 					<div class="span2"><img src="http://lorempixel.com/140/140/music" /></div>
 					<div class="span10">
 						<div class="row-fluid">
@@ -775,12 +744,13 @@
 						
 					</div>
 					
-				</div>
+				</div> -->
 					
 				<div class="clearLeftFloat">
 					<div class="tabbable tabs-left clearfix">				
 						<ul class="nav nav-tabs" id="artistNav">
-							<li class="active bold"><a href="#artistNewsTab" data-toggle="tab">NEWS</a></li>
+							<li class="active bold"><a href="#artistFavoriteTab" data-toggle="tab">FAVORITE</a></li>
+							<!-- <li class="bold"><a href="#artistNewsTab" data-toggle="tab">NEWS</a></li>
 							<li class="bold"><a href="#artistAlbumsTab" data-toggle="tab">ALBUMS</a></li>
 								<li class="indent10"><a href="#artistAlbumsTab" data-toggle="tab">ALBUM 1</a></li>
 								<li class="indent10"><a href="#artistAlbumsTab" data-toggle="tab">ALBUM 2</a></li>
@@ -788,113 +758,40 @@
 							<li class="bold"><a href="#artistPlaylistsTab" data-toggle="tab">PLAYLISTS</a></li>
 								<li class="indent10"><a href="#artistPlaylistsTab" data-toggle="tab">PLAYLIST 1</a></li>
 								<li class="indent10"><a href="#artistPlaylistsTab" data-toggle="tab">PLAYLIST 2</a></li>
-								<li class="indent10"><a href="#artistPlaylistsTab" data-toggle="tab">PLAYLIST 3</a></li>
+								<li class="indent10"><a href="#artistPlaylistsTab" data-toggle="tab">PLAYLIST 3</a></li> -->
 								
 							
 						</ul>
 						<div class="tab-content">						
-<!-- ARTISTS - NEWS FEED TAB  -->
+<!-- ARTISTS - FAVORITE TAB  -->
 							
-							<div class="tab-pane active" id="artistNewsTab">
-								<!-- ARTISTS NEWS CONTENT -->
-								<div><h5>NEWS FEED</h5></div>
-								<div class="row-fluid borderTop1">
-									<div class="span1 newsImageCell"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></div>
-									<div class="span3 newsNameCell">Frank Ocean</div>
-									<div class="span6">
-										<div class="newsMessage">Message Content Goes Here. Message Content Goes Here. Message Content Goes Here.</div>
-								    	<div class="newsImageAttach">
-								    		<?-- if there is an attachment -->
-								    		<img src="http://lorempixel.com/200/150/nightlife" />
-								    	</div>
-									</div>
-									<div class="span2 newsDate">Apr 13, 2013</div>							
+							<div class="tab-pane active" id="artistFavoriteTab">
+								<!-- ARTISTS ALBUMS CONTENT -->
+								<div><h5>FAVORITE ARTISTS</h5></div>
+								<div class="row-fluid">
+									<div class="span1 headerRow"></div>
+									<div class="span4 headerRow">ARTIST</div>
+									<div class="span4 headerRow">LOCATION</div>
+									<div class="span2 headerRow">GENRE</div>
+									<div class="span1 headerRow"></div>							
 								</div>
 								<div class="row-fluid borderTop1">
-									<div class="span1 newsImageCell"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></div>
-									<div class="span3 newsNameCell">Ringo Starr and the Galaxy 3 Band</div>
-									<div class="span6">
-										<div class="newsMessage">Message Content Goes Here. Message Content Goes Here. Message Content Goes Here.</div>
-								    	<div class="newsImageAttach">
-								    		<?-- if there is an attachment -->
-								    	</div>	
-									</div>
-									<div class="span2 newsDate">Apr 13, 2013</div>							
+									<div class="span1"><a href="#artistModal" role="button" data-toggle="modal"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></a></div>
+									<div class="span4">Hansen (Featuring Andy Dick)</div>
+									<div class="span4">Oxford, Michigan</div>
+									<div class="span2">Alternative Pop</div>
+									<div class="span1"><span class="sprite_lower_tabs remove"></span></div>							
+								</div>
+								<div class="row-fluid borderTop1">
+									<div class="span1"><a href="#artistModal" role="button" data-toggle="modal"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></a></div>
+									<div class="span4">Hansen (Featuring Andy Dick)</div>
+									<div class="span4">Oxford, Michigan</div>
+									<div class="span2">Alternative Pop</div>
+									<div class="span1"><span class="sprite_lower_tabs remove"></span></div>							
 								</div>
 							</div>
-							
-<!-- ARTISTS - ALBUMS TAB  -->
-							
-							<div class="tab-pane" id="artistAlbumsTab">
-								<!-- ARTISTS ALBUMS CONTENT -->
-								<div><h5>ALBUMS TAB</h5></div>
-								<div class="row-fluid">
-									<div class="span1 headerRow"></div>
-									<div class="span4 headerRow">TRACK</div>
-									<!-- <div class="span3">ARTIST</div> -->
-									<div class="span4 headerRow">ARTIST</div>
-									<div class="span1 headerRow">TIME</div>
-									<div class="span1 headerRow"></div>
-									<div class="span1 headerRow"></div>								
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1"><span class="sprite_lower_tabs play"></span></div>
-									<div class="span4">Mmmm Bop</div>
-									<!-- <div class="span3">Hansen Revisited</div> -->
-									<div class="span4">Hansen (Featuring Andy Dick)</div>
-									<div class="span1">3:27</div>
-									<div class="span1"><span class="sprite_lower_tabs add"></span></div>
-									<div class="span1"><span class="sprite_lower_tabs remove"></span></div>								
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1"><span class="sprite_lower_tabs play"></span></div>
-									<div class="span4">Mmmm Bop</div>
-									<!-- <div class="span3">Hansen Revisited</div> -->
-									<div class="span4">Hansen (Featuring Andy Dick)</div>
-									<div class="span1">3:27</div>
-									<div class="span1"><span class="sprite_lower_tabs add"></span></div>
-									<div class="span1"><span class="sprite_lower_tabs remove"></span></div>								
-								</div>
-							</div>							
-						
-<!-- ARTISTS - PLAYLISTS TAB  -->
-							
-							<div class="tab-pane" id="artistPlaylistsTab">
-								<!-- ARTISTS PLAYLIST CONTENT -->
-								<div class="row-fluid">
-									<div class="span8"><h5>PLAYLIST NAME</h5></div>
-									<div class="span4 text-right" ><span id="playlistDelete"><button class="btn btn-link btn-mini">remove playlist</button></span></div>
-								</div>
-								
-								<div class="row-fluid headerRow">
-									<div class="span1"></div>
-									<div class="span3">TRACK</div>
-									<div class="span2">ARTIST</div>
-									<div class="span3">ALBUM</div>
-									<div class="span1">TIME</div>
-									<div class="span1"></div>
-									<div class="span1"></div>
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1 playlistPlay"><span class="sprite_lower_tabs play"></div>
-									<div class="span3 playlistSong">Little Pigs, Little Pigs</div>
-									<div class="span2 playlistArtist">Green Jelly</span></div>
-									<div class="span3 playlistAlbum">Mother Goose on Crack</div>
-									<div class="span1 playlistSongTime">3:17</div>
-									<div class="span1 playlistAddButton"><span class="sprite_lower_tabs add"></span></div>
-									<div class="span1 playlistRemoveButton"><span class="sprite_lower_tabs remove"></span></div>
-								</div>
-								<div class="row-fluid borderTop1">
-									<div class="span1 playlistPlay"><span class="sprite_lower_tabs play"></div>
-									<div class="span3 playlistSong">Nightmare on Sesame Street</div>
-									<div class="span2 playlistArtist">Green Jelly</span></div>
-									<div class="span3 playlistAlbum">Mother Goose on Crack</div>
-									<div class="span1 playlistSongTime">2:03</div>
-									<div class="span1 playlistAddButton"><span class="sprite_lower_tabs add"></span></div>
-									<div class="span1 playlistRemoveButton"><span class="sprite_lower_tabs remove"></span></div>
-								</div>
-								
-							</div>					
+
+					
 						
 						</div>	 <!-- end of .tab-content -->	
 							
@@ -1238,7 +1135,174 @@
 	    </div>
     </div>
     
-    
+<!-- Artist Modal -->    
+    <div id="artistModal" class="modal hide fade">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    	<div class="row-fluid">
+			<div class="span2"><img src="http://lorempixel.com/140/140/music" /></div>
+			<div class="span10">
+				<div class="row-fluid">
+					<div class="span8" id="artistName">Artist Name <span class="profileLocation">City, State</span></div>
+					<div class="span4" id="artistURL"><button class="btn btn-link btn-mini">OFFICIAL WEBSITE</button></div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12" id="artistBio">This is artist bio information...</div>
+				</div>
+				
+			</div>
+			
+		</div>
+    </div>
+    <div class="modal-body">
+
+<!-- ARTISTS - MAIN TAB  -->			
+			<div class="tab-pane" id="mainArtists">
+
+				<!-- PROFILE TAB  -->
+				<!-- <div class="row-fluid">
+					<div class="span2"><img src="http://lorempixel.com/140/140/music" /></div>
+					<div class="span10">
+						<div class="row-fluid">
+							<div class="span8" id="artistName">Artist Name <span class="profileLocation">City, State</span></div>
+							<div class="span4" id="artistURL"><button class="btn btn-link btn-mini">OFFICIAL WEBSITE</button></div>
+						</div>
+						<div class="row-fluid">
+							<div class="span12" id="artistBio">This is artist bio information...</div>
+						</div>
+						
+					</div>
+					
+				</div> -->
+					
+				<div class="clearLeftFloat tab-content">
+					<div class="tabbable tabs-left clearfix">				
+						<ul class="nav nav-tabs" id="artistNavModal">
+							<li class=" active bold"><a href="#artistNewsTabModal" data-toggle="tab">NEWS</a></li>
+							<li class="bold"><a href="#artistAlbumsTabModal" data-toggle="tab">ALBUMS</a></li>
+								<li class="indent10"><a href="#artistAlbumsTabModal" data-toggle="tab">ALBUM 1</a></li>
+								<li class="indent10"><a href="#artistAlbumsTabModal" data-toggle="tab">ALBUM 2</a></li>
+								<li class="indent10"><a href="#artistAlbumsTabModal" data-toggle="tab">ALBUM 3</a></li>
+							<li class="bold"><a href="#artistPlaylistsTabModal" data-toggle="tab">PLAYLISTS</a></li>
+								<li class="indent10"><a href="#artistPlaylistsTabModal" data-toggle="tab">PLAYLIST 1</a></li>
+								<li class="indent10"><a href="#artistPlaylistsTabModal" data-toggle="tab">PLAYLIST 2</a></li>
+								<li class="indent10"><a href="#artistPlaylistsTabModal" data-toggle="tab">PLAYLIST 3</a></li>
+								
+							
+						</ul>
+						<div class="tab-content">						
+
+
+<!-- ARTISTS - NEWS FEED TAB  -->
+							
+							<div class="tab-pane active" id="artistNewsTabModal">
+								<!-- ARTISTS NEWS CONTENT -->
+								<div><h5>NEWS FEED</h5></div>
+								<div class="row-fluid borderTop1">
+									<div class="span1 newsImageCell"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></div>
+									<div class="span3 newsNameCell">Frank Ocean</div>
+									<div class="span6">
+										<div class="newsMessage">Message Content Goes Here. Message Content Goes Here. Message Content Goes Here.</div>
+								    	<div class="newsImageAttach">
+								    		<?-- if there is an attachment -->
+								    		<img src="http://lorempixel.com/200/150/nightlife" />
+								    	</div>
+									</div>
+									<div class="span2 newsDate">Apr 13, 2013</div>							
+								</div>
+								<div class="row-fluid borderTop1">
+									<div class="span1 newsImageCell"><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></div>
+									<div class="span3 newsNameCell">Ringo Starr and the Galaxy 3 Band</div>
+									<div class="span6">
+										<div class="newsMessage">Message Content Goes Here. Message Content Goes Here. Message Content Goes Here.</div>
+								    	<div class="newsImageAttach">
+								    		<?-- if there is an attachment -->
+								    	</div>	
+									</div>
+									<div class="span2 newsDate">Apr 13, 2013</div>							
+								</div>
+							</div>
+							
+<!-- ARTISTS - ALBUMS TAB  -->
+							
+							<div class="tab-pane" id="artistAlbumsTabModal">
+								<!-- ARTISTS ALBUMS CONTENT -->
+								<div><h5>ALBUMS TAB</h5></div>
+								<div class="row-fluid">
+									<div class="span5headerRow">TRACK</div>
+									<div class="span5 headerRow">ARTIST</div>
+									<div class="span1 headerRow">TIME</div>
+									<div class="span1 headerRow"></div>							
+								</div>
+								<div class="row-fluid borderTop1">
+									<div class="span5">Mmmm Bop</div>
+									<div class="span5">Hansen (Featuring Andy Dick)</div>
+									<div class="span1">3:27</div>
+									<div class="span1"><span class="sprite_lower_tabs add"></span></div>							
+								</div>
+								<div class="row-fluid borderTop1">
+									<div class="span5">Mmmm Bop</div>
+									<div class="span5">Hansen (Featuring Andy Dick)</div>
+									<div class="span1">3:27</div>
+									<div class="span1"><span class="sprite_lower_tabs add"></span></div>							
+								</div>
+							</div>							
+						
+<!-- ARTISTS - PLAYLISTS TAB  -->
+							
+							<div class="tab-pane" id="artistPlaylistsTabModal">
+								<!-- ARTISTS PLAYLIST CONTENT -->
+								<div class="row-fluid">
+									<div class="span8"><h5>PLAYLIST NAME</h5></div>
+									<div class="span4 text-right" ><span id="playlistDelete"><button class="btn btn-link btn-mini">remove playlist</button></span></div>
+								</div>
+								
+								<div class="row-fluid headerRow">
+									<div class="span1"></div>
+									<div class="span3">TRACK</div>
+									<div class="span3">ARTIST</div>
+									<div class="span3">ALBUM</div>
+									<div class="span1">TIME</div>
+									<div class="span1"></div>
+								</div>
+								<div class="row-fluid borderTop1">
+									<div class="span1 playlistPlay"><span class="sprite_lower_tabs play"></div>
+									<div class="span3 playlistSong">Little Pigs, Little Pigs</div>
+									<div class="span3 playlistArtist">Green Jelly</span></div>
+									<div class="span3 playlistAlbum">Mother Goose on Crack</div>
+									<div class="span1 playlistSongTime">3:17</div>
+									<div class="span1 playlistAddButton"><span class="sprite_lower_tabs add"></span></div>
+								</div>
+								<div class="row-fluid borderTop1">
+									<div class="span1 playlistPlay"><span class="sprite_lower_tabs play"></div>
+									<div class="span3 playlistSong">Nightmare on Sesame Street</div>
+									<div class="span3 playlistArtist">Green Jelly</span></div>
+									<div class="span3 playlistAlbum">Mother Goose on Crack</div>
+									<div class="span1 playlistSongTime">2:03</div>
+									<div class="span1 playlistAddButton"><span class="sprite_lower_tabs add"></span></div>
+								</div>
+								
+							</div>					
+						
+						</div>	 <!-- end of .tab-content -->	
+							
+						</div>
+					</div>	
+				</div>
+
+
+
+    </div>
+    <div class="modal-footer">
+    <a href="#" class="btn btn-primary">CLOSE</a>
+    </div>
+    </div>
+
+
+
+
+
+
     
     <!-- Search Modal -->
     <div id="searchModal" class="modal modal- hide fade" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
@@ -1387,6 +1451,116 @@
 							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
 								    	<td>
 								    		<div>How We Do (Party)</div>
+								    	</td>
+								    	<td>								    		
+								    		<div>Pop</div>
+								    		<div>Main</div>
+								    	</td>								    		
+							    	</tr>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>
+								    		<div>Honey Boo</div>
+								    		<div>Frank Ocean</div>
+								    	</td>
+								    	<td>								    		
+								    		<div>Electronica</div>
+								    		<div>Indie</div>
+								    	</td>								    		
+							    	</tr>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>
+								    		<div>How We Do</div>
+								    		<div>Rita Ora</div>
+								    	</td>
+								    	<td>								    		
+								    		<div>Pop</div>
+								    		<div>Main</div>
+								    	</td>								    		
+							    	</tr>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>
+								    		<div>Honey Boo</div>
+								    		<div>Frank Ocean</div>
+								    	</td>
+								    	<td>								    		
+								    		<div>Electronica</div>
+								    		<div>Indie</div>
+								    	</td>								    		
+							    	</tr>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>
+								    		<div>How We Do</div>
+								    		<div>Rita Ora</div>
+								    	</td>
+								    	<td>								    		
+								    		<div>Pop</div>
+								    		<div>Main</div>
+								    	</td>								    		
+							    	</tr>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>
+								    		<div>Honey Boo</div>
+								    		<div>Frank Ocean</div>
+								    	</td>
+								    	<td>								    		
+								    		<div>Electronica</div>
+								    		<div>Indie</div>
+								    	</td>								    		
+							    	</tr>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>
+								    		<div>How We Do</div>
+								    		<div>Rita Ora</div>
+								    	</td>
+								    	<td>								    		
+								    		<div>Pop</div>
+								    		<div>Main</div>
+								    	</td>								    		
+							    	</tr>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>
+								    		<div>Honey Boo</div>
+								    		<div>Frank Ocean</div>
+								    	</td>
+								    	<td>								    		
+								    		<div>Electronica</div>
+								    		<div>Indie</div>
+								    	</td>								    		
+							    	</tr>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>
+								    		<div>How We Do</div>
+								    		<div>Rita Ora</div>
+								    	</td>
+								    	<td>								    		
+								    		<div>Pop</div>
+								    		<div>Main</div>
+								    	</td>								    		
+							    	</tr>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>
+								    		<div>Honey Boo</div>
+								    		<div>Frank Ocean</div>
+								    	</td>
+								    	<td>								    		
+								    		<div>Electronica</div>
+								    		<div>Indie</div>
+								    	</td>								    		
+							    	</tr>
+							    	<tr>
+							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+								    	<td>
+								    		<div>How We Do</div>
+								    		<div>Rita Ora</div>
 								    	</td>
 								    	<td>								    		
 								    		<div>Pop</div>
