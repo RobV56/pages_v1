@@ -1204,7 +1204,7 @@
 									<div class="span6">
 										<div class="newsMessage">Message Content Goes Here. Message Content Goes Here. Message Content Goes Here.</div>
 								    	<div class="newsImageAttach">
-								    		<?-- if there is an attachment -->
+								    		<!-- if there is an attachment -->
 								    		<img src="http://lorempixel.com/200/150/nightlife" />
 								    	</div>
 									</div>
@@ -1227,24 +1227,44 @@
 							
 							<div class="tab-pane" id="artistAlbumsTabModal">
 								<!-- ARTISTS ALBUMS CONTENT -->
-								<div><h5>ALBUMS TAB</h5></div>
+								<div><h5>ALBUMS TITLE</h5></div>
 								<div class="row-fluid">
-									<div class="span5headerRow">TRACK</div>
-									<div class="span5 headerRow">ARTIST</div>
+									<div class="span1"></div>
+									<div class="span5 headerRow">TRACK</div>
+									<div class="span4 headerRow">ARTIST</div>
 									<div class="span1 headerRow">TIME</div>
 									<div class="span1 headerRow"></div>							
 								</div>
 								<div class="row-fluid borderTop1">
+									<div class="span1 playlistPlay"><span class="sprite_lower_tabs play"></div>
 									<div class="span5">Mmmm Bop</div>
-									<div class="span5">Hansen (Featuring Andy Dick)</div>
+									<div class="span4">Hansen (Featuring Andy Dick)</div>
 									<div class="span1">3:27</div>
-									<div class="span1"><span class="sprite_lower_tabs add"></span></div>							
+									<div class="span1"><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></div>							
 								</div>
 								<div class="row-fluid borderTop1">
+									<div class="span1 playlistPlay"><span class="sprite_lower_tabs play"></div>
 									<div class="span5">Mmmm Bop</div>
-									<div class="span5">Hansen (Featuring Andy Dick)</div>
+									<div class="span4">Hansen (Featuring Andy Dick)</div>
 									<div class="span1">3:27</div>
-									<div class="span1"><span class="sprite_lower_tabs add"></span></div>							
+									<div class="span1"><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></div>							
+								</div>
+								<div id="playlistList">
+									<form></form>
+									<label class="checkbox">
+										<input type="checkbox" value="Playlist 1"> Playlist 1
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" value="Playlist 2"> Playlist 2
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" value="Playlist 3"> Playlist 3
+									</label>
+									<label class="checkbox">
+										<input type="checkbox" value="Playlist 4"> Playlist 4
+									</label>
+									<button type="submit" class="btn btn-info btn-small">SAVE</button>
+									</form>
 								</div>
 							</div>							
 						
@@ -1271,7 +1291,7 @@
 									<div class="span3 playlistArtist">Green Jelly</span></div>
 									<div class="span3 playlistAlbum">Mother Goose on Crack</div>
 									<div class="span1 playlistSongTime">3:17</div>
-									<div class="span1 playlistAddButton"><span class="sprite_lower_tabs add"></span></div>
+									<div class="span1 playlistAddButton"><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></div>
 								</div>
 								<div class="row-fluid borderTop1">
 									<div class="span1 playlistPlay"><span class="sprite_lower_tabs play"></div>
@@ -1279,7 +1299,7 @@
 									<div class="span3 playlistArtist">Green Jelly</span></div>
 									<div class="span3 playlistAlbum">Mother Goose on Crack</div>
 									<div class="span1 playlistSongTime">2:03</div>
-									<div class="span1 playlistAddButton"><span class="sprite_lower_tabs add"></span></div>
+									<div class="span1 playlistAddButton"><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></div>
 								</div>
 								
 							</div>					
@@ -1294,7 +1314,7 @@
 
     </div>
     <div class="modal-footer">
-    <a href="#" class="btn btn-primary">CLOSE</a>
+    <a href="#" class="btn btn-info">CLOSE</a>
     </div>
     </div>
 
@@ -1349,7 +1369,8 @@
 							    		<th>Songs</th>
 								    	<th>Artist</th>
 								    	<th>Genre</th>
-								    	<th width="50"><a href="">Filter</a>/<br /><a href="">View All</a></th>							    		
+								    	<th width="50"><a href="">Filter</a>/<br /><a href="">View All</a></th>	
+								    	<th width="40"></th>						    		
 							    	</tr>
 							    	</thead>
 							    	<tbody>
@@ -1358,7 +1379,8 @@
 								    	<td>Yeah Yeah Yeah</td>
 								    	<td>Frank Ocean</td>
 								    	<td>Electronica</td>
-								    	<td><a href="">Indie</a></td>								    		
+								    	<td><a href="">Indie</a></td>	
+								    	<td><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></td>							    		
 							    	</tr>
 							    	<tr>
 							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
@@ -1366,6 +1388,7 @@
 								    	<td>Rita Ora</td>
 								    	<td>Pop</td>
 								    	<td><a href="">Main</a></td>
+								    	<td><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></td>
 							    	</tr>
 							    	</tbody>
 							    </table>	
@@ -1381,6 +1404,7 @@
 								    	<th>City</th>
 								    	<th>Genre</th>
 								    	<th width="50">Filter/<br />View All</th>
+								    	<th width="40"></th>
 							    	</tr>
 							    	</thead>
 							    	<tbody>
@@ -1390,6 +1414,7 @@
 								    	<td>Boise</td>
 								    	<td class="centerText">Electronica</td>
 								    	<td class="centerText"><a href="">Indie</a></td>
+								    	<td><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></td>
 							    	</tr>
 							    	<tr>
 							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
@@ -1397,6 +1422,7 @@
 								    	<td>London</td>
 								    	<td class="centerText">Pop</td>
 								    	<td class="centerText"><a href="">Main</a></td>
+								    	<td><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></td>
 							    	</tr>
 							    	</tbody>
 							    </table>	
@@ -1430,14 +1456,13 @@
 							    <table class="table table-hover">
 							    	<thead>
 							    	<tr>
-							    		<th width="40"></th>
 							    		<th width="200">Songs/Artists</th>
-								    	<th width="60">Genre/Label</th>							    		
+								    	<th width="60">Genre/Label</th>
+							    		<th width="40"></th>							    		
 							    	</tr>
 							    	</thead>
 							    	<tbody>
 							    	<tr>
-							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
 								    	<td>
 								    		<div>Honey Boo Boo</div>
 								    		<div>Frank Ocean</div>
@@ -1445,20 +1470,21 @@
 								    	<td>								    		
 								    		<div>Electronica</div>
 								    		<div>Indie</div>
-								    	</td>								    		
+								    	</td>
+							    		<td><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></td>								    		
 							    	</tr>
 							    	<tr>
-							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
 								    	<td>
 								    		<div>How We Do (Party)</div>
 								    	</td>
 								    	<td>								    		
 								    		<div>Pop</div>
 								    		<div>Main</div>
-								    	</td>								    		
+								    	</td>
+							    		<td><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></td>								    		
 							    	</tr>
 							    	<tr>
-							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+							    		
 								    	<td>
 								    		<div>Honey Boo</div>
 								    		<div>Frank Ocean</div>
@@ -1466,10 +1492,10 @@
 								    	<td>								    		
 								    		<div>Electronica</div>
 								    		<div>Indie</div>
-								    	</td>								    		
+								    	</td>
+								    	<td><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></td>								    		
 							    	</tr>
 							    	<tr>
-							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
 								    	<td>
 								    		<div>How We Do</div>
 								    		<div>Rita Ora</div>
@@ -1477,10 +1503,11 @@
 								    	<td>								    		
 								    		<div>Pop</div>
 								    		<div>Main</div>
-								    	</td>								    		
+								    	</td>
+								    	<td><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></td>								    		
 							    	</tr>
 							    	<tr>
-							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+							    		
 								    	<td>
 								    		<div>Honey Boo</div>
 								    		<div>Frank Ocean</div>
@@ -1488,10 +1515,11 @@
 								    	<td>								    		
 								    		<div>Electronica</div>
 								    		<div>Indie</div>
-								    	</td>								    		
+								    	</td>	
+								    	<td><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></td>							    		
 							    	</tr>
 							    	<tr>
-							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+							    		
 								    	<td>
 								    		<div>How We Do</div>
 								    		<div>Rita Ora</div>
@@ -1499,10 +1527,11 @@
 								    	<td>								    		
 								    		<div>Pop</div>
 								    		<div>Main</div>
-								    	</td>								    		
+								    	</td>
+								    	<td><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></td>								    		
 							    	</tr>
 							    	<tr>
-							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+							    		
 								    	<td>
 								    		<div>Honey Boo</div>
 								    		<div>Frank Ocean</div>
@@ -1510,10 +1539,11 @@
 								    	<td>								    		
 								    		<div>Electronica</div>
 								    		<div>Indie</div>
-								    	</td>								    		
+								    	</td>
+								    	<td><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></td>								    		
 							    	</tr>
 							    	<tr>
-							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+							    		
 								    	<td>
 								    		<div>How We Do</div>
 								    		<div>Rita Ora</div>
@@ -1521,10 +1551,11 @@
 								    	<td>								    		
 								    		<div>Pop</div>
 								    		<div>Main</div>
-								    	</td>								    		
+								    	</td>
+								    	<td><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></td>								    		
 							    	</tr>
 							    	<tr>
-							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+							    		
 								    	<td>
 								    		<div>Honey Boo</div>
 								    		<div>Frank Ocean</div>
@@ -1532,10 +1563,11 @@
 								    	<td>								    		
 								    		<div>Electronica</div>
 								    		<div>Indie</div>
-								    	</td>								    		
+								    	</td>
+								    	<td><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></td>								    		
 							    	</tr>
 							    	<tr>
-							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+							    		
 								    	<td>
 								    		<div>How We Do</div>
 								    		<div>Rita Ora</div>
@@ -1543,10 +1575,11 @@
 								    	<td>								    		
 								    		<div>Pop</div>
 								    		<div>Main</div>
-								    	</td>								    		
+								    	</td>
+								    	<td><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></td>								    		
 							    	</tr>
 							    	<tr>
-							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
+							    		
 								    	<td>
 								    		<div>Honey Boo</div>
 								    		<div>Frank Ocean</div>
@@ -1554,40 +1587,8 @@
 								    	<td>								    		
 								    		<div>Electronica</div>
 								    		<div>Indie</div>
-								    	</td>								    		
-							    	</tr>
-							    	<tr>
-							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
-								    	<td>
-								    		<div>How We Do</div>
-								    		<div>Rita Ora</div>
-								    	</td>
-								    	<td>								    		
-								    		<div>Pop</div>
-								    		<div>Main</div>
-								    	</td>								    		
-							    	</tr>
-							    	<tr>
-							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
-								    	<td>
-								    		<div>Honey Boo</div>
-								    		<div>Frank Ocean</div>
-								    	</td>
-								    	<td>								    		
-								    		<div>Electronica</div>
-								    		<div>Indie</div>
-								    	</td>								    		
-							    	</tr>
-							    	<tr>
-							    		<td><img src="images/icon_profile_36_v1.png" width="30" height="30px" /></td>
-								    	<td>
-								    		<div>How We Do</div>
-								    		<div>Rita Ora</div>
-								    	</td>
-								    	<td>								    		
-								    		<div>Pop</div>
-								    		<div>Main</div>
-								    	</td>								    		
+								    	</td>	
+								    	<td><span data-placement="left" title="Add to Playlist" class="sprite_lower_tabs add add2playlist"></span></td>							    		
 							    	</tr>
 							    	</tbody>
 							    </table>	
@@ -1669,6 +1670,19 @@
 				yearRange: (year - 100) + ":" + year,
 			});
 		});		
+	</script>
+	<script>
+		$(document).ready(function(){
+			
+			$('.add2playlist').popover({
+				
+				html : true,
+				content : function() {
+					return $('#playlistList').html();
+				}
+				
+			});
+		});
 	</script>
   
   <!-- end scripts-->
