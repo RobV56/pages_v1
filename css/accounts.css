@@ -34,10 +34,14 @@
 }
 .detailBox {
 	background:#fff;
-	padding:10px;
+	padding:0px;
 	color:#000;
 	font-weight:bold;
 }
+.detailBox [class*="span"] {
+	padding:7px;
+}
+
 .detailDivider {
 	padding-top:10px;
 	border-top:1px solid #3d3d3d;
