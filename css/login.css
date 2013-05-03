@@ -18,6 +18,34 @@
 	float:right;
 	width:800px;
 }
+
+.passwordBox {
+	background:#222122;
+	padding:15px 25px;
+	
+}
+.passwordBox .title {
+	font-weight:bold;
+	color:#fff;
+	margin-bottom:10px;
+	
+}
+.passwordBox .message {
+	font-weight:bold;
+	color:#6bdffe;
+	margin-bottom:10px;
+	
+}
+.passwordBox form {
+	margin:0px;
+}
+.form-inline div {
+	margin-bottom:5px;
+}
+#forgotModal, #resetModal {
+	color:#000;
+}
+
 #login_header {
 	width:800px;
 	float:right;
@@ -166,7 +194,32 @@
 	width:800px;
 }
 
-
+.passwordBox {
+	background:#222122;
+	padding:15px 25px;
+	
+}
+.passwordBox .title {
+	font-weight:bold;
+	color:#fff;
+	margin-bottom:10px;
+	
+}
+.passwordBox .message {
+	font-weight:bold;
+	color:#6bdffe;
+	margin-bottom:10px;
+	
+}
+.passwordBox form {
+	margin:0px;
+}
+.form-inline div {
+	margin-bottom:5px;
+}
+#forgotModal, #resetModal {
+	color:#000;
+}
 #login_header {
 	width:800px;
 	min-height:150px;

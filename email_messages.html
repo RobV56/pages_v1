@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>email_messages</title>
+		<meta name="description" content="" />
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		
+		<style type="text/css">
+			body {
+				background:#000000 url(images/bg_emails_v1.png) top center repeat;
+			}
+			#wrapper {
+				width:640px;
+				padding:0px;
+				margin:0px auto;
+				background:#fff;
+				color:#000;
+			}
+			#header {
+				background:#000 url(images/bg_login_header_med1.png);
+				padding:15px 15px 3px 15px;	
+			}
+			#content {
+				padding:15px;
+			}
+			.greeting {
+				font-size:12px;
+				font-weight:bold;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			.message {
+				font-size:12px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			.signature {
+				font-size:12px;
+				font-weight:bold;
+				font-family:Arial, Helvetica, sans-serif;
+				margin-top:30px;
+			}
+			
+			
+		</style>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<section id="cancelAccount">
+				<div id="header"><img src="images/logo_v2.png" /></div>
+				<div id="content">
+					<div class="greeting">Hello <span style="font-weight: bold;">{FIRST NAME}</span></div>
+					<div class="message">
+						<p>We’re sorry to see you go, but we’re glad you came. Your account has been deactivated.</p>
+					</div>
+					<div class="signature">- Ourtunez Team</div>
+				</div>
+			</section>
+			<section id="passwordReset">
+				<div id="header"><img src="images/logo_v2.png" /></div>
+				<div id="content">
+					<div class="greeting">Hello <span style="font-weight: bold;">{FIRST NAME}</span></div>
+					<div class="message">
+						<p>You have requested to reset your password. <a href="">Click this link to reset.</a></p>
+						<p>Back to the music!</p>
+					</div>
+					<div class="signature">- Ourtunez Team</div>
+				</div>
+			</section>
+			<section id="welcomeMember">
+				<div id="header"><img src="images/logo_v2.png" /></div>
+				<div id="content">
+					<div class="greeting">Hello <span style="font-weight: bold;">{FIRST NAME}</span></div>
+					<div class="message">
+						<p>Welcome to Ourtunez, a music streaming service that focuses on new music discovery by booking breakthrough indie artists with big mainstream names on the same virtual stage. Ourtunez breaks the locks of the other music streaming services and opens the doors to new music discovery for listeners who demand a deeper experience.</p>
+						<p>Your USERNAME is: <span style="font-weight: bold;">{USERNAME}</span></p>
+						<p><a href="">Click here</a> to confirm your account, and get ready to Rock Out!</p>
+					</div>
+					<div class="signature">- Ourtunez Team</div>
+				</div>
+			</section>	
+		</div>
+	</body>
+</html>
