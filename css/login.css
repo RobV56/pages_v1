@@ -1,6 +1,9 @@
 
 /* -------------  Ourtunez Login Page -------------- */
-
+input[type="email"], input[type="password"], select, .btn-large, .btn-small, .btn-mini  {
+	border-radius: 0px;
+	font-size:10px;
+}
 /* ------------------------------------------------------------------ Large Style -------------*/
 
 @media only screen and (min-width: 1250px) {
