@@ -218,7 +218,16 @@ input[type="file"] {
 	border:1px;
 	border-color: #DDDDDD transparent #DDDDDD #DDDDDD;
 }
-
+.modalBox {
+	max-height: 300px;
+	overflow:auto;
+}
+.popBox {
+	max-height: 130px;
+	width:200px;
+	overflow:auto;
+	margin-bottom:5px;
+}
 #searchModalMobile {
 	color:#000;
 	width:300px;
